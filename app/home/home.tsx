@@ -5,12 +5,15 @@ import newsSectionBg from "public/images/Sample_image_light.png";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Links, navigations } from "../components/navbar/navigation";
+import SupportSection from "./sections/support-section/support-section";
 
 export default function Home() {
   const faqNavigation = navigations.find((n) => n.link == Links.FAQ);
   const newsNavigation = navigations.find((n) => n.link == Links.NEWS);
-  const collaborationNavigation = navigations.find((n) => n.link == Links.COLLABORATION);
-  
+  const collaborationNavigation = navigations.find(
+    (n) => n.link == Links.COLLABORATION
+  );
+
   return (
     <Container fluid>
       <Row
@@ -35,11 +38,15 @@ export default function Home() {
           <div className="text-center text-md-start ">
             <h1 className="img-overlay">Dołącz do grona sztabowiczów!</h1>
             <p className="px-5 px-md-0 img-overlay">
-              Kończymy urlopy i&nbsp;zabieramy
-              się&nbsp;do&nbsp;pracy. Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
+              Kończymy urlopy i&nbsp;zabieramy się&nbsp;do&nbsp;pracy.
+              Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
             </p>
             <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
-            <Button variant="primary" size="lg" href={collaborationNavigation.link}>
+            <Button
+              variant="primary"
+              size="lg"
+              href={collaborationNavigation.link}
+            >
               {collaborationNavigation.name}
             </Button>
           </div>
@@ -55,6 +62,11 @@ export default function Home() {
           ></i>
         </Col>
       </Row>
+
+      <Row>
+        <SupportSection></SupportSection>
+      </Row>
+
       <Row
         className="py-4"
         style={{
@@ -95,7 +107,7 @@ export default function Home() {
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          transitionDelay: '1000',
+          transitionDelay: "1000",
         }}
       >
         <Col
@@ -110,7 +122,9 @@ export default function Home() {
               Gramy do końca świata
               <br />i jeden dzień dłużej
             </h1>
-            <h6 className="img-overlay">Po więcej aktualności zajrzyjcie na nasz profil Facebook</h6>
+            <h6 className="img-overlay">
+              Po więcej aktualności zajrzyjcie na nasz profil Facebook
+            </h6>
             <Button variant="primary" size="lg" href={newsNavigation.link}>
               WOŚP Białystok
             </Button>
