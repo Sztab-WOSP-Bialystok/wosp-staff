@@ -1,0 +1,18 @@
+[
+    {
+        "mail": "address_name_1@domain.com",
+        "surname": "surname_1",
+        "name": "name_1",
+        "phone": "+00000000000",
+        "title": "title_1",
+        "imagePath": "public/images/Sample_image_dark.png"
+    },
+    {
+        "mail": "address_name_2@domain.com",
+        "surname": "surname_2",
+        "name": "name_2",
+        "phone": "+11111111111",
+        "title": "title_2",
+        "imagePath": "public/images/Sample_image_light.png"
+    }
+]

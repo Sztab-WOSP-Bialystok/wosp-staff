@@ -1,0 +1,24 @@
+[
+    {
+        "name": "CATEGORY_1",
+        "questions": [
+            {
+                "question": "question_1_1",
+                "answer": "answer_1_1"
+            },
+            {
+                "question": "question_1_2",
+                "answer": "answer_1_2"
+            }
+        ]
+    },
+    {
+        "name": "CATEGORY_2",
+        "questions": [
+            {
+                "question": "question_2_1",
+                "answer": "answer_2_1"
+            }
+        ]
+    }
+]

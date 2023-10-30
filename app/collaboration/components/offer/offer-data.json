@@ -1,0 +1,16 @@
+[
+    {
+        "title": "OFFER_TITLE_1",
+        "description": "OFFER_DESCRIPTION_1",
+        "lightImgSrc": "images/Sample_image_light.png",
+        "darkImgSrc": "images/Sample_image_dark.png",
+        "display": true
+    },
+    {
+        "title": "OFFER_TITLE_2",
+        "description": "OFFER_DESCRIPTION_2",
+        "lightImgSrc": "images/Sample_image_light.png",
+        "darkImgSrc": "images/Sample_image_dark.png",
+        "display": true
+    }
+]
