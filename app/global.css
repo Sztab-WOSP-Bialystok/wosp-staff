@@ -15,7 +15,7 @@
   border: unset;
 }
 
-.button {
+.button-radioactive {
   background-color: #2ba805;
   -webkit-border-radius: 60px;
   border-radius: 60px;
@@ -31,13 +31,13 @@
   animation: glowing 2000ms infinite;
 }
 
-.button:hover {
+.button-radioactive:hover {
   animation: none;
   background-color: #49e819;
   box-shadow: 0 0 50px #49e819;
 }
 
-.button:active:focus {
+.button-radioactive:active:focus {
   animation: none;
   background-color: #2ba805;
   box-shadow: 0 0 50px #2ba805;

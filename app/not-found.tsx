@@ -27,7 +27,7 @@ export default function NotFound() {
           <div className="text-center text-md-start">
             <h1 className="info">Ups... Chyba zabłądziłeś</h1>
             <h6>Kliknij kafelek by wrócić na powierzchnię!</h6>
-            <Button className="button" href={homeNavigation.link}>
+            <Button className="button-radioactive" href={homeNavigation.link}>
               {homeNavigation.name}
             </Button>
           </div>
