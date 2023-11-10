@@ -1,0 +1,29 @@
+[
+    {
+        "title": "SUPPORT_TITLE_1",
+        "description": "SUPPORT_DESCRIPTION_1",
+        "lightImgSrc": "images/Sample_image_light.png",
+        "darkImgSrc": "images/Sample_image_dark.png",
+        "link": "/link_1",
+        "buttonLabel" : "Button_label_1",
+        "display": true
+    },
+    {
+        "title": "SUPPORT_TITLE_2",
+        "description": "SUPPORT_DESCRIPTION_2",
+        "lightImgSrc": "images/Sample_image_light.png",
+        "darkImgSrc": "images/Sample_image_dark.png",
+        "link": "/link_2",
+        "buttonLabel" : "Button_label_2",
+        "display": true
+    },
+    {
+        "title": "SUPPORT_TITLE_3",
+        "description": "SUPPORT_DESCRIPTION_3",
+        "lightImgSrc": "images/Sample_image_light.png",
+        "darkImgSrc": "images/Sample_image_dark.png",
+        "link": "/link_3",
+        "buttonLabel" : "Button_label_3",
+        "display": true
+    }
+]
