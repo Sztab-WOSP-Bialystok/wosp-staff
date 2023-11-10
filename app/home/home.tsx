@@ -6,8 +6,10 @@ import newsSectionBg from "public/images/Sample_image_light.png";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Links, navigations } from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
   const faqNavigation = navigations.find((n) => n.link == Links.FAQ);
   const newsNavigation = navigations.find((n) => n.link == Links.NEWS);
   const collaborationNavigation = navigations.find(
@@ -45,7 +47,7 @@ export default function Home() {
             <Button
               variant="primary"
               size="lg"
-              href={collaborationNavigation.link}
+              onClick={() => router.push(collaborationNavigation.link)}
             >
               {collaborationNavigation.name}
             </Button>
@@ -89,7 +91,7 @@ export default function Home() {
                   <h6 className="my-0">Przejdź do sekcji</h6>
                 </Col>
                 <Col xs={12} sm={5} className="mt-1 mt-sm-0">
-                  <Button href={faqNavigation.link}>
+                  <Button onClick={() => router.push(faqNavigation.link)}>
                     {faqNavigation.name}
                   </Button>
                 </Col>
@@ -125,7 +127,11 @@ export default function Home() {
             <h6 className="img-overlay">
               Po więcej aktualności zajrzyjcie na nasz profil Facebook
             </h6>
-            <Button variant="primary" size="lg" href={newsNavigation.link}>
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={() => router.push(newsNavigation.link)}
+            >
               WOŚP Białystok
             </Button>
           </div>

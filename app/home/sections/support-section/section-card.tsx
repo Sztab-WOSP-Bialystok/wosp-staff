@@ -1,5 +1,6 @@
 import { Button, Card, Nav } from "react-bootstrap";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
 
 export interface SectionCardData {
   title: string;
@@ -14,6 +15,8 @@ export interface SectionCardData {
 type Props = { data: SectionCardData };
 
 export default function SectionCard({ data }: Props) {
+  const router = useRouter();
+
   return (
     <Card className="d-flex justify-content-center" style={{ height: "100%" }}>
       <Card.Img
@@ -41,7 +44,11 @@ export default function SectionCard({ data }: Props) {
       <Card.Body className="d-none d-md-block">
         <Card.Title>{data.title}</Card.Title>
         <Card.Text>{data.description}</Card.Text>
-        <Button variant="primary" className="button" href={data.link}>
+        <Button
+          variant="primary"
+          className="button"
+          onClick={() => router.push(data.link)}
+        >
           {data.buttonLabel}
         </Button>
       </Card.Body>
