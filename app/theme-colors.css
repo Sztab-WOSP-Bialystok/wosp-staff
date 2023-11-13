@@ -1,0 +1,17 @@
+:root {
+  --darkblue-color: rgb(34, 27, 76);
+  --blue-color: rgb(0, 159, 227);
+  --cyan-color: rgb(0, 153, 146);
+  --green-color: rgb(34, 166, 56);
+  --lightgreen-color: rgb(151, 193, 31);
+  --yellow-color: rgb(254, 237, 1);
+  --lightorange-color: rgb(251, 180, 0);
+  --orange-color: rgb(238, 112, 2);
+  --red-color: rgb(221, 7, 19);
+  --pink-color: rgb(230, 0, 126);
+  --purple-color: rgb(149, 27, 130);
+  --lightgray-color: rgb(152, 162, 172);
+  --darkgray-color: rgb(33, 39, 45);
+  --light-bg-gradient: rgb(30, 92, 127);
+  --dark-bg-gradient: rgb(37, 27, 75);
+}
