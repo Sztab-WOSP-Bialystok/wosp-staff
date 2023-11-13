@@ -15,7 +15,7 @@ export default function VolounteerTabHeader() {
         .filter((source) => source.key === "for_volounteer")
         .map((source) => (
           <div className="my-3 mx-0 mx-sm-3">
-            <h6 style={{ color: "var(--pink-color)" }}>
+            <h6 className="theme-pink">
               Więcej szczegółów dotyczących rejestracji na stronie głównego
               Sztabu:
             </h6>
