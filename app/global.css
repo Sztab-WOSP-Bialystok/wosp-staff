@@ -1,4 +1,5 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "theme-colors.css";
 
 .navbar-toggler {
   /* TODO: Move to navbar component directory */
