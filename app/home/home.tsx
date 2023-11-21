@@ -66,7 +66,7 @@ export default function Home() {
       </Row>
 
       <Row>
-        <SupportSection></SupportSection>
+        <SupportSection />
       </Row>
 
       <Row
