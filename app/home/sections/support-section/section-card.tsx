@@ -1,12 +1,9 @@
-import { Button, Card, Nav } from "react-bootstrap";
-import Link from "next/link";
-import { useRouter } from 'next/navigation';
+import { Card } from "react-bootstrap";
 
 export interface SectionCardData {
   title: string;
   description: string;
-  lightImgSrc: string;
-  darkImgSrc: string;
+  backgroundColor: string;
   display: boolean;
   link: string;
   buttonLabel: string;
@@ -15,42 +12,23 @@ export interface SectionCardData {
 type Props = { data: SectionCardData };
 
 export default function SectionCard({ data }: Props) {
-  const router = useRouter();
-
   return (
-    <Card className="d-flex justify-content-center" style={{ height: "100%" }}>
-      <Card.Img
-        fetchPriority="high"
-        variant="top"
-        src={data.lightImgSrc}
-        style={{ objectFit: "cover", height: 150 }}
-        className="d-none d-md-block"
-      />
-      <Card.Img
-        fetchPriority="high"
-        variant="top"
-        src={data.darkImgSrc}
-        style={{ objectFit: "cover", height: 170 }}
-        className="d-block d-md-none rounded-bottom"
-      />
-      <Nav.Link as={Link} href={data.link} disabled={false}>
-        <Card.ImgOverlay className={"d-block d-md-none text-light"}>
-          <Card.Title className="img-overlay">
-            <h1>{data.title}</h1>
-          </Card.Title>
-          <Card.Text className="img-overlay">{data.description}</Card.Text>
-        </Card.ImgOverlay>
-      </Nav.Link>
-      <Card.Body className="d-none d-md-block">
-        <Card.Title>{data.title}</Card.Title>
+    <Card className="justify-content-center card-navigate">
+      <Card.Body
+        className="d-flex flex-column"
+        style={{
+          objectFit: "cover",
+          height: 200,
+        }}
+      >
+        <Card.Title>
+          <h4>{data.title}</h4>
+        </Card.Title>
         <Card.Text>{data.description}</Card.Text>
-        <Button
-          variant="primary"
-          className="button"
-          onClick={() => router.push(data.link)}
-        >
+        <Card.Link className="mt-auto" href={data.link}>
           {data.buttonLabel}
-        </Button>
+          <i className="ms-2 bi bi-box-arrow-up-right"></i>
+        </Card.Link>
       </Card.Body>
     </Card>
   );
