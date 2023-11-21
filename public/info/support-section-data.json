@@ -1,29 +1,26 @@
 [
     {
-        "title": "SUPPORT_TITLE_1",
-        "description": "SUPPORT_DESCRIPTION_1",
-        "lightImgSrc": "images/Sample_image_light.png",
-        "darkImgSrc": "images/Sample_image_dark.png",
+        "title": "Partnerstwo",
+        "description": "Dołącz do grona partnerów oraz sponsorów, dzięki którym jesteśmy w stanie co roku organizować Finał",
+        "backgroundColor": "blue-color",
         "link": "/link_1",
-        "buttonLabel" : "Button_label_1",
+        "buttonLabel" : "Poznaj oferty współpracy",
         "display": true
     },
     {
-        "title": "SUPPORT_TITLE_2",
-        "description": "SUPPORT_DESCRIPTION_2",
-        "lightImgSrc": "images/Sample_image_light.png",
-        "darkImgSrc": "images/Sample_image_dark.png",
-        "link": "/link_2",
-        "buttonLabel" : "Button_label_2",
+        "title": "Wirtualna zbiórka",
+        "description": "Wesprzyj bezpośrednio realizację celów Finału poprzez wpłatę online do naszej eSkarbonki",
+        "backgroundColor": "",
+        "link": "https://eskarbonka.wosp.org.pl",
+        "buttonLabel" : "Przejdź do eSkarbonki",
         "display": true
     },
     {
-        "title": "SUPPORT_TITLE_3",
-        "description": "SUPPORT_DESCRIPTION_3",
-        "lightImgSrc": "images/Sample_image_light.png",
-        "darkImgSrc": "images/Sample_image_dark.png",
-        "link": "/link_3",
-        "buttonLabel" : "Button_label_3",
+        "title": "Aukcje",
+        "description": "Weź udział w aukcjach i licytuj kupony na usługi, rękodzieło, przedmioty kolekcjonerskie oraz wiele innych!",
+        "backgroundColor": "",
+        "link": "https://allegro.pl/uzytkownik/BialyWOSP",
+        "buttonLabel" : "Przejdź do Allegro",
         "display": true
     }
 ]

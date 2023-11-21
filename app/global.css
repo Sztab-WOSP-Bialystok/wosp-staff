@@ -1,4 +1,5 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "theme-colors.css";
 
 .navbar-toggler {
   /* TODO: Move to navbar component directory */
@@ -132,4 +133,20 @@
 .img-overlay {
   text-shadow: black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px,
     black 0px 0px 3px, black 0px 0px 3px;
+}
+
+.theme-pink {
+  color: var(--pink-color);
+}
+
+.card-img-overlay {
+  .card-link {
+    text-decoration: none;
+  }
+}
+
+.card-img-overlay:hover {
+  .card-link {
+    text-decoration: underline;
+  }
 }

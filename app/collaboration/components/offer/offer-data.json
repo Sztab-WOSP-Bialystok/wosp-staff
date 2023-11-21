@@ -1,16 +1,37 @@
 [
     {
-        "title": "OFFER_TITLE_1",
-        "description": "OFFER_DESCRIPTION_1",
-        "lightImgSrc": "images/Sample_image_light.png",
-        "darkImgSrc": "images/Sample_image_dark.png",
+        "title": "Rozwój strony WWW",
+        "description": "Chciałbyś spróbować swoich sił korzystając z narzędzi Next.js oraz React? Dołącz do naszego zespołu rozwijającego aplikację",
+        "lightImgSrc": "images/cards/dev_bg_light.jpg",
+        "darkImgSrc": "images/cards/dev_bg_dark.jpg",
         "display": true
     },
     {
-        "title": "OFFER_TITLE_2",
-        "description": "OFFER_DESCRIPTION_2",
-        "lightImgSrc": "images/Sample_image_light.png",
-        "darkImgSrc": "images/Sample_image_dark.png",
+        "title": "Organizacja wydarzeń",
+        "description": "Organizacja imprez towarzyszących Finałowi, w tym turnieju futsalu, spotkań sztabowych, biegów i wielu innych przedsięwzięć",
+        "lightImgSrc": "images/cards/events_bg_light_run.webp",
+        "darkImgSrc": "images/cards/events_bg_dark.jpg",
+        "display": false
+    },
+    {
+        "title": "Prowadzenie aukcji",
+        "description": "Wystawianie aukcji allegro i fotografowanie przedmiotów przekazanych sztabowi na aukcje",
+        "lightImgSrc": "images/cards/auctions_bg_light.JPG",
+        "darkImgSrc": "images/cards/auctions_bg_dark.JPG",
+        "display": true
+    },
+    {
+        "title": "Obsługa wolontariuszy",
+        "description": "Pomoc w dniu Finału w sztabie przy obsłudze wolontariuszy kwestujących z puszką",
+        "lightImgSrc": "images/cards/eskarbonka.webp",
+        "darkImgSrc": "images/cards/volounteers_bg_dark.jpg",
+        "display": true
+    },
+    {
+        "title": "Zarządzanie puszkami stacjonarnymi",
+        "description": "Rozdysponowanie puszek do wskazanych miejsc i prowadzenie ich spisu",
+        "lightImgSrc": "images/cards/boxes_bg_light.JPG",
+        "darkImgSrc": "images/cards/boxes_bg_dark.JPG",
         "display": true
     }
 ]

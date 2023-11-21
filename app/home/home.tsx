@@ -132,7 +132,7 @@ export default function Home() {
               size="lg"
               onClick={() => router.push(newsNavigation.link)}
             >
-              WOŚP Białystok
+             <i className="bi bi-facebook"></i> WOŚP Białystok
             </Button>
           </div>
         </Col>
