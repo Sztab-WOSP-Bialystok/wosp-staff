@@ -1,13 +1,5 @@
 import { Card } from "react-bootstrap";
-
-export interface SectionCardData {
-  title: string;
-  description: string;
-  backgroundColor: string;
-  display: boolean;
-  link: string;
-  buttonLabel: string;
-}
+import { SectionCardData } from "./types/sectionTypes";
 
 type Props = { data: SectionCardData };
 

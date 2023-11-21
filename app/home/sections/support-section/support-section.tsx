@@ -1,6 +1,7 @@
 import supportSectionData from "public/info/support-section-data.json";
 import { Col, Container, Row } from "react-bootstrap";
-import SupportCard, { SectionCardData } from "./section-card";
+import SupportCard from "./section-card";
+import { SectionCardData } from "./types/sectionTypes";
 
 export default function SupportSection() {
   const data: SectionCardData[] = supportSectionData;
