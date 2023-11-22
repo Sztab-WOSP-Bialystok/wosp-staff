@@ -1,5 +1,6 @@
 [
     {
+        "key": "person1",
         "mail": "address_name_1@domain.com",
         "surname": "surname_1",
         "name": "name_1",
@@ -8,6 +9,7 @@
         "imagePath": "public/images/Sample_image_dark.png"
     },
     {
+        "key": "person2",
         "mail": "address_name_2@domain.com",
         "surname": "surname_2",
         "name": "name_2",

@@ -2,6 +2,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
 export interface ContactData {
+  key: string;
   name: string;
   surname: string;
   title: string;
@@ -14,7 +15,7 @@ type Props = { data: ContactData };
 
 export default function ContactCard({ data }: Props) {
   return (
-    <Card className="justify-content-center mt-2 mt-sm-3 mt-xl-5">
+    <Card className="justify-content-center">
       <Card.Body style={{ height: 100 }}>
         <Card.Title>{data.title}</Card.Title>
         <Card.Text>

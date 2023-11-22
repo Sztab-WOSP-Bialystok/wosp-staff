@@ -1,4 +1,4 @@
-import supportSectionData from "public/info/support-section-data.json";
+import supportSectionData from "../../../../public/info/support-section-data.json";
 import { Col, Container, Row } from "react-bootstrap";
 import SupportCard from "./section-card";
 import { SectionCardData } from "./types/sectionTypes";
@@ -13,11 +13,11 @@ export default function SupportSection() {
           <h2>Wsparcie Finału</h2>
         </Col>
       </Row>
-      <Row className="d-flex justify-content-center">
+      <Row className="d-flex justify-content-center px-md-5">
         {data
           .filter((offer) => offer.display)
           .map((offer) => (
-            <Col key={offer.title} xs={12} md={6} lg={4} className="mb-4">
+            <Col key={offer.title} xs={12} md={6} className="mb-4">
               <SupportCard data={offer}></SupportCard>
             </Col>
           ))}

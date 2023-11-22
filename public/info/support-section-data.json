@@ -4,7 +4,7 @@
         "description": "Dołącz do grona partnerów oraz sponsorów, dzięki którym jesteśmy w stanie co roku organizować Finał",
         "backgroundColor": "blue-color",
         "link": "/link_1",
-        "buttonLabel" : "Poznaj oferty współpracy",
+        "buttonLabel": "Poznaj oferty współpracy",
         "display": true
     },
     {
@@ -12,7 +12,7 @@
         "description": "Wesprzyj bezpośrednio realizację celów Finału poprzez wpłatę online do naszej eSkarbonki",
         "backgroundColor": "",
         "link": "https://eskarbonka.wosp.org.pl",
-        "buttonLabel" : "Przejdź do eSkarbonki",
+        "buttonLabel": "Przejdź do eSkarbonki",
         "display": true
     },
     {
@@ -20,7 +20,15 @@
         "description": "Weź udział w aukcjach i licytuj kupony na usługi, rękodzieło, przedmioty kolekcjonerskie oraz wiele innych!",
         "backgroundColor": "",
         "link": "https://allegro.pl/uzytkownik/BialyWOSP",
-        "buttonLabel" : "Przejdź do Allegro",
+        "buttonLabel": "Przejdź do Allegro",
+        "display": true
+    },
+    {
+        "title": "Puszka stacjonarna",
+        "description": "Firmy i instytucje mogą wspomóc zbiórkę umieszczając w lokalach Puszki Stacjonarne",
+        "backgroundColor": "",
+        "link": "/money-box",
+        "buttonLabel": "Więcej informacji",
         "display": true
     }
 ]
