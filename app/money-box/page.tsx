@@ -106,6 +106,15 @@ export default function Page() {
                 <ContactCard data={moneyBoxCoordinatorContact} />
               </Col>
             </Row>
+            <Row className="py-4">
+							<Col xs={12}>
+								<iframe
+									src="https://www.google.com/maps/d/embed?mid=1vsYTtnXNWzXTDJLG15aW68fE78MznZw&ehbc=2E312F"
+									width="100%"
+									height="480"
+								></iframe>
+							</Col>
+						</Row>
           </Container>
         </Col>
       </Row>
