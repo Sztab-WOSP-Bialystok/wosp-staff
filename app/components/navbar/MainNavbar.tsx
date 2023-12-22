@@ -8,9 +8,8 @@ function MainNavbar() {
     <Navbar
       collapseOnSelect
       expand="xl"
-      bg="light"
-      data-bs-theme="light"
       sticky="top"
+      variant="dark"
     >
       <Container>
         <BrandNavbar />

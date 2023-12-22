@@ -9,8 +9,8 @@ import AppFooter from "./components/footer/appFooter";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body className="">
+    <html lang="pl-Pl" data-bs-theme="dark">
+      <body>
         <Navbar />
         {children}
         <AppFooter />

@@ -8,7 +8,7 @@ function BrandNavbar() {
         as={Link}
         href="/"
         data-bs-toggle="collapse"
-        className="d-flex align-items-center text-wrap link-primary text-decoration-none me-2"
+        className="d-flex align-items-center text-wrap text-decoration-none me-2"
       >
         <div className="d-block d-md-none me-2" style={{ lineHeight: "14px" }}>
           <i className="bi-house-heart-fill fs-2"></i>
@@ -30,12 +30,12 @@ function BrandNavbar() {
       </Nav.Link>
       <div className="d-flex align-items-center me-2">
         <Link href="https://www.facebook.com/bialystokwosp">
-          <i className="bi bi-facebook link-primary fs-3"></i>
+          <i className="bi bi-facebook fs-3"></i>
         </Link>
       </div>
       <div className="d-flex align-items-center me-2">
         <Link href="https://www.instagram.com/wosp.bialystok">
-          <i className="bi bi-instagram link-primary fs-3"></i>
+          <i className="bi bi-instagram fs-3"></i>
         </Link>
       </div>
     </Navbar.Brand>

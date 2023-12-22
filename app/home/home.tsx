@@ -75,7 +75,7 @@ export default function Home() {
       <Row
         className="py-4"
         style={{
-          backgroundColor: "white",
+          backgroundColor: "var(--bs-body-bg)",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
         }}
@@ -90,7 +90,7 @@ export default function Home() {
             <h1>Masz pytanie?</h1>
             <Container fluid className="px-0">
               <Row className="align-items-center">
-                <Col xs={12} sm={7} className="text-align-center">
+                <Col xs={12} sm={7} className="text-center">
                   <h6 className="my-0">Przejdź do sekcji</h6>
                 </Col>
                 <Col xs={12} sm={5} className="mt-1 mt-sm-0">
