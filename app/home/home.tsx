@@ -7,9 +7,12 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { Links, navigations } from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
 import { useRouter } from 'next/navigation';
+import { wospInternalLinks } from "../components/footer/models/wospInternalLink";
 
 export default function Home() {
   const router = useRouter();
+  
+  const iWolonatariuszSource = wospInternalLinks.find((s) => s.key === 'iwolontariusz')
   const faqNavigation = navigations.find((n) => n.link == Links.FAQ);
   const newsNavigation = navigations.find((n) => n.link == Links.NEWS);
   const collaborationNavigation = navigations.find(
@@ -37,21 +40,21 @@ export default function Home() {
           style={{ height: "75%" }}
           className="text-light d-flex align-items-center justify-content-center"
         >
-          <div className="text-center text-md-start ">
-            <h1 className="img-overlay">Dołącz do grona sztabowiczów!</h1>
-            <p className="px-5 px-md-0 img-overlay">
-              Kończymy urlopy i&nbsp;zabieramy się&nbsp;do&nbsp;pracy.
-              Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
-            </p>
-            <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={() => router.push(collaborationNavigation.link)}
-            >
-              {collaborationNavigation.name}
-            </Button>
-          </div>
+        <div className="text-center text-md-start ">
+          <h1 className="img-overlay">Dołącz do grona wolontariuszy!</h1>
+          <p className="px-5 px-md-0 img-overlay">
+            Wesprzyj realizację celu Finału dołączając do&nbsp;kwestujących wolontariuszy.
+            Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
+          </p>
+          <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
+          <Button
+            variant="primary"
+            size="lg"
+            onClick={() => router.push(iWolonatariuszSource.link)}
+          >
+            {iWolonatariuszSource.description}
+          </Button>
+        </div>
         </Col>
         <Col
           xs={12}

@@ -1,19 +1,23 @@
 export type WospInternalLink = {
+  key: string;
   link: string;
-  wospSiteDescription: string;
+  description: string;
 };
 
 export const wospInternalLinks: WospInternalLink[] = [
   {
+    key: "main_staff",
     link: "https://www.wosp.org.pl/",
-    wospSiteDescription: "Strona głównego sztabu",
+    description: "Strona głównego sztabu",
   },
   {
+    key: "volounteer_info",
     link: "https://www.wosp.org.pl/final/dla-wolontariuszy",
-    wospSiteDescription: "Jak zostać wolontariuszem",
+    description: "Jak zostać wolontariuszem",
   },
   {
+    key: "iwolontariusz",
     link: "https://iwolontariusz.wosp.org.pl/",
-    wospSiteDescription: "Rejestracja wolontariuszy",
+    description: "Rejestracja wolontariuszy",
   },
 ];

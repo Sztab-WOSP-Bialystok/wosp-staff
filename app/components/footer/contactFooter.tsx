@@ -16,7 +16,7 @@ const ContactFooter = () => {
                     href={wospInternalLink.link}
                     className="text-decoration-none"
                   >
-                    {wospInternalLink.wospSiteDescription}
+                    {wospInternalLink.description}
                   </a>
                 </span>
               </div>
