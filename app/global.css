@@ -30,6 +30,10 @@ nav, footer {
   color: var(--bs-body-color);
 }
 
+.card > .list-group {
+    border-top: none;
+    border-bottom: inherit;
+}
 
 .button-radioactive {
 	background-color: #2ba805;
