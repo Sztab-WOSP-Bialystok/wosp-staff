@@ -4,20 +4,19 @@ import holidaySectionBg from "public/images/Sample_image_dark.png";
 import newsSectionBg from "public/images/Sample_image_light.png";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { Links, navigations } from "../components/navbar/navigation";
+import {Links, NavigationElement, navigations} from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
 import { useRouter } from 'next/navigation';
-import { wospInternalLinks } from "../components/footer/models/wospInternalLink";
+import {WospInternalLink, wospInternalLinks} from "../components/footer/models/wospInternalLink";
+import Counter from "../components/counter/Counter";
+import {useState} from "react";
 
 export default function Home() {
   const router = useRouter();
-  
-  const iWolonatariuszSource = wospInternalLinks.find((s) => s.key === 'iwolontariusz')
-  const faqNavigation = navigations.find((n) => n.link == Links.FAQ);
-  const newsNavigation = navigations.find((n) => n.link == Links.NEWS);
-  const collaborationNavigation = navigations.find(
-    (n) => n.link == Links.COLLABORATION
-  );
+
+  const [iWolonatariuszSource] = useState<WospInternalLink>(wospInternalLinks.find((s) => s.key === 'iwolontariusz'))
+  const [faqNavigation] = useState<NavigationElement>(navigations.find((n) => n.link == Links.FAQ));
+  const [newsNavigation] = useState<NavigationElement>(navigations.find((n) => n.link == Links.NEWS));
 
   return (
     <Container fluid>
