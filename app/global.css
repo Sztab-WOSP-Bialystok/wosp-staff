@@ -5,6 +5,10 @@ body {
 	background-image: url("../public/images/textures/70_S_32FinalWOSP2024_tapeta_ZAPETLONE_podglad.jpg");
 }
 
+:root {
+	--bs-body-bg: rgb(30,30,30);
+}
+
 .navbar-toggler {
 	/* TODO: Move to navbar component directory */
 	border: none !important;
