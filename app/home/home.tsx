@@ -1,7 +1,7 @@
 "use client";
 
-import holidaySectionBg from "public/images/Sample_image_dark.png";
-import newsSectionBg from "public/images/Sample_image_light.png";
+import holidaySectionBg from "public/images/cards/volounteers_bg_dark.jpg";
+import newsSectionBg from "public/images/70_S_32FinalWOSP2024_tapeta_ZAPETLONE_podglad.jpg";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
 import {Links, NavigationElement, navigations} from "../components/navbar/navigation";
@@ -27,7 +27,7 @@ export default function Home() {
           backgroundColor: "black",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          backgroundPosition: "0% 70%",
+          backgroundPosition: "100% 70%",
         }}
       >
         <Col

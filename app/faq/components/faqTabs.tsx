@@ -1,9 +1,10 @@
 import { TabElement } from "../../components/Tabs/types";
-import questions from "public/info/faq-data.json";
+import questions from "../../../public/info/faq-data.json";
 
 import Questions from "./Questions";
 import { QuestionGroup } from "./types";
 import VolounteerTabHeader from "./volounteerTabHeader";
+import { FAQ_CATEGORY_KEYS } from "../../consts/faq-category-keys.const";
 
 export const faqTabs: TabElement[] = questions.map(
   ({ name, questions }: QuestionGroup): TabElement => ({
@@ -11,7 +12,7 @@ export const faqTabs: TabElement[] = questions.map(
     id: name,
     content: (
       <>
-        {name === "CATEGORY_1" ? (
+        {name === FAQ_CATEGORY_KEYS.VOLOUNTEER ? (
           <VolounteerTabHeader></VolounteerTabHeader>
         ) : (
           <></>

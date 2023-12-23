@@ -3,7 +3,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Offer from "./components/offer/offer";
 
-import collaborationBg from "public/images/Sample_image_dark.png";
+import collaborationBg from "public/images/collaboration_bg_dark.jpg";
 
 export default function Page() {
   return (

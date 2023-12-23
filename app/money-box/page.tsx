@@ -4,13 +4,14 @@ import { Container, Row, Col, Accordion } from "react-bootstrap";
 import contactData from "../../public/info/contact-data.json";
 import ContactCard, { ContactData } from "../contact/contact-card";
 import Link from "next/link";
+import { CONTACT_KEYS } from "../consts/contact-keys.const";
 //TODO: Configure SSR
 
 export default function Page() {
   const data: ContactData[] = contactData;
-  const mainStaffContact = data.find((contact) => contact.key == "person2");
+  const mainStaffContact = data.find((contact) => contact.key == CONTACT_KEYS.BOSS);
   const moneyBoxCoordinatorContact = data.find(
-    (contact) => contact.key == "person1"
+    (contact) => contact.key == CONTACT_KEYS.MONEY_BOX
   );
 
   return (
