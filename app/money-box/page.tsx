@@ -22,10 +22,10 @@ export default function Page() {
     <Container className="my-3 my-xl-5">
       <Row>
         <Col lg={{ span: 8, offset: 2 }} className="text-center img-overlay">
-          <h3>
+          <h1>
             Czy wiesz, że&nbsp;każda firma i&nbsp;instytucja może wspomóc
             zbiórkę WOŚP?
-          </h3>
+          </h1>
           <p className="px-5">
             Można to&nbsp;zrobić poprzez Puszkę Stacjonarną, którą można mieć we
             własnym lokalu od 10 grudnia 2023 do&nbsp;dnia Finału w&nbsp;dniu
@@ -110,7 +110,7 @@ export default function Page() {
                 lg={{ span: 6, offset: 3 }}
                 style={{ marginTop: "8rem" }}
               >
-                <h3 className="text-center mb-4 img-overlay">Potrzebujesz więcej informacji?</h3>
+                <h2 className="text-center mb-4 img-overlay">Potrzebujesz więcej informacji?</h2>
                 <div className="position-relative">
                   <img
                     src={spiral.src}
