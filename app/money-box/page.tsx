@@ -1,15 +1,19 @@
 "use client";
 
-import { Container, Row, Col, Accordion } from "react-bootstrap";
+import { Container, Row, Col, Accordion, Card } from "react-bootstrap";
 import contactData from "../../public/info/contact-data.json";
 import ContactCard, { ContactData } from "../contact/contact-card";
 import Link from "next/link";
 import { CONTACT_KEYS } from "../consts/contact-keys.const";
+import spiral from "public/images/41A_S_32FinalWOSP2024_grafika_fragment_podglad.png";
+
 //TODO: Configure SSR
 
 export default function Page() {
   const data: ContactData[] = contactData;
-  const mainStaffContact = data.find((contact) => contact.key == CONTACT_KEYS.BOSS);
+  const mainStaffContact = data.find(
+    (contact) => contact.key == CONTACT_KEYS.BOSS
+  );
   const moneyBoxCoordinatorContact = data.find(
     (contact) => contact.key == CONTACT_KEYS.MONEY_BOX
   );
@@ -17,18 +21,19 @@ export default function Page() {
   return (
     <Container className="my-3 my-xl-5">
       <Row>
-        <Col xs={12} className="text-center">
-          <h3 >
+        <Col lg={{ span: 8, offset: 2 }} className="text-center img-overlay">
+          <h3>
             Czy wiesz, że&nbsp;każda firma i&nbsp;instytucja może wspomóc
             zbiórkę WOŚP?
           </h3>
           <p className="px-5">
             Można to&nbsp;zrobić poprzez Puszkę Stacjonarną, którą można mieć we
-            własnym lokalu od 10 grudnia 2023 do&nbsp;dnia Finału w&nbsp;dniu 28&nbsp;stycznia&nbsp;2024.
+            własnym lokalu od 10 grudnia 2023 do&nbsp;dnia Finału w&nbsp;dniu
+            28&nbsp;stycznia&nbsp;2024.
           </p>
         </Col>
-        <Col xs={12} className="my-3 my-xl-5">
-          <Accordion defaultActiveKey={['0']}>
+        <Col xl={{ span: 8, offset: 2 }} className="my-3 my-xl-5">
+          <Accordion defaultActiveKey={["0"]}>
             <Accordion.Item eventKey="0">
               <Accordion.Header>
                 Czym jest Firmowa Puszka Stacjonarna?
@@ -103,19 +108,35 @@ export default function Page() {
                 sm={{ span: 12 }}
                 md={{ span: 8, offset: 2 }}
                 lg={{ span: 6, offset: 3 }}
+                style={{ marginTop: "8rem" }}
               >
-                <ContactCard data={moneyBoxCoordinatorContact} />
+                <h3 className="text-center mb-4 img-overlay">Potrzebujesz więcej informacji?</h3>
+                <div className="position-relative">
+                  <img
+                    src={spiral.src}
+                    width={400}
+                    style={{
+                      position: "absolute",
+                      top: "-200px",
+                      left: "-170px",
+                      zIndex: "-1",
+                    }}
+                  ></img>
+                  <ContactCard data={moneyBoxCoordinatorContact} />
+                </div>
               </Col>
             </Row>
             <Row className="py-4">
-							<Col xs={12}>
-								<iframe
-									src="https://www.google.com/maps/d/embed?mid=1vsYTtnXNWzXTDJLG15aW68fE78MznZw&ehbc=2E312F"
-									width="100%"
-									height="480"
-								></iframe>
-							</Col>
-						</Row>
+              <Col xs={12}>
+                <Card>
+                  <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1vsYTtnXNWzXTDJLG15aW68fE78MznZw&ehbc=2E312F"
+                    width="100%"
+                    height="480"
+                  ></iframe>
+                </Card>
+              </Col>
+            </Row>
           </Container>
         </Col>
       </Row>

@@ -1,22 +1,33 @@
 "use client";
 
 import holidaySectionBg from "public/images/cards/volounteers_bg_dark.jpg";
-import newsSectionBg from "public/images/70_S_32FinalWOSP2024_tapeta_ZAPETLONE_podglad.jpg";
 
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import {Links, NavigationElement, navigations} from "../components/navbar/navigation";
+import {
+  WospInternalLink,
+  wospInternalLinks,
+} from "../components/footer/models/wospInternalLink";
+import {
+  Links,
+  NavigationElement,
+  navigations,
+} from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
-import { useRouter } from 'next/navigation';
-import {WospInternalLink, wospInternalLinks} from "../components/footer/models/wospInternalLink";
-import Counter from "../components/counter/Counter";
-import {useState} from "react";
 
 export default function Home() {
   const router = useRouter();
 
-  const [iWolonatariuszSource] = useState<WospInternalLink>(wospInternalLinks.find((s) => s.key === 'iwolontariusz'))
-  const [faqNavigation] = useState<NavigationElement>(navigations.find((n) => n.link == Links.FAQ));
-  const [newsNavigation] = useState<NavigationElement>(navigations.find((n) => n.link == Links.NEWS));
+  const [iWolonatariuszSource] = useState<WospInternalLink>(
+    wospInternalLinks.find((s) => s.key === "iwolontariusz")
+  );
+  const [faqNavigation] = useState<NavigationElement>(
+    navigations.find((n) => n.link == Links.FAQ)
+  );
+  const [newsNavigation] = useState<NavigationElement>(
+    navigations.find((n) => n.link == Links.NEWS)
+  );
 
   return (
     <Container fluid>
@@ -39,21 +50,21 @@ export default function Home() {
           style={{ height: "75%" }}
           className="text-light d-flex align-items-center justify-content-center"
         >
-        <div className="text-center text-md-start ">
-          <h1 className="img-overlay">Dołącz do grona wolontariuszy!</h1>
-          <p className="px-5 px-md-0 img-overlay">
-            Wesprzyj realizację celu Finału dołączając do&nbsp;kwestujących wolontariuszy.
-            Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
-          </p>
-          <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
-          <Button
-            variant="primary"
-            size="lg"
-            onClick={() => router.push(iWolonatariuszSource.link)}
-          >
-            {iWolonatariuszSource.description}
-          </Button>
-        </div>
+          <div className="text-center text-md-start ">
+            <h1 className="img-overlay">Dołącz do grona wolontariuszy!</h1>
+            <p className="px-5 px-md-0 img-overlay">
+              Wesprzyj realizację celu Finału dołączając do&nbsp;kwestujących
+              wolontariuszy. Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
+            </p>
+            <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={() => router.push(iWolonatariuszSource.link)}
+            >
+              {iWolonatariuszSource.description}
+            </Button>
+          </div>
         </Col>
         <Col
           xs={12}
@@ -106,12 +117,6 @@ export default function Home() {
       <Row
         style={{
           height: "100vh",
-          backgroundImage: "url(" + newsSectionBg.src + ")",
-          backgroundColor: "black",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          transitionDelay: "1000",
         }}
       >
         <Col
@@ -134,7 +139,7 @@ export default function Home() {
               size="lg"
               onClick={() => router.push(newsNavigation.link)}
             >
-             <i className="bi bi-facebook"></i> WOŚP Białystok
+              <i className="bi bi-facebook"></i> WOŚP Białystok
             </Button>
           </div>
         </Col>

@@ -2,32 +2,48 @@
 @import "theme-colors.css";
 
 body {
-	background-image: url("../public/images/textures/70_S_32FinalWOSP2024_tapeta_ZAPETLONE_podglad.jpg");
+  background-image: url("../public/images/textures/70_S_32FinalWOSP2024_tapeta_ZAPETLONE_podglad.jpg");
 }
 
 :root {
-	--bs-body-bg: rgb(30,30,30);
+  --bs-body-bg: #131313;
+  --wosp-card-border: #eb951c;
+  --wosp-color: #c4c4c4;
+}
+
+a > i  {
+  color: var(--wosp-color);
 }
 
 .navbar-toggler {
-	/* TODO: Move to navbar component directory */
-	border: none !important;
+  /* TODO: Move to navbar component directory */
+  border: none !important;
 }
 
 .navbar-toggler {
-	/* TODO: Move to navbar component directory */
-	border: none !important;
+  /* TODO: Move to navbar component directory */
+  border: none !important;
 }
 
-nav, footer {
+nav,
+footer {
   background-color: var(--bs-body-bg);
 }
 
-.card {
-  color: #c4c4c4;
-	border: 2px solid white;
+.card,
+.accordion {
+  color: var(--wosp-color);
+  border: 2px solid var(--wosp-card-border);
   position: relative;
-  outline: 6px solid black;  
+}
+
+.card,
+.accordion {
+  outline: 6px solid black;
+}
+
+.accordion {
+  border-radius: 4px;
 }
 
 .img-overlay.card-text {
@@ -35,141 +51,142 @@ nav, footer {
 }
 
 .card > .list-group {
-    border-top: none;
-    border-bottom: inherit;
+  border-top: none;
 }
 
 .button-radioactive {
-	background-color: #2ba805;
-	-webkit-border-radius: 60px;
-	border-radius: 60px;
-	border: none;
-	color: #eeeeee;
-	cursor: pointer;
-	display: inline-block;
-	font-family: sans-serif;
-	font-size: 20px;
-	padding: 5px 15px;
-	text-align: center;
-	text-decoration: none;
-	animation: glowing 2000ms infinite;
+  background-color: #2ba805;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 2000ms infinite;
 }
 
 .button-radioactive:hover {
-	animation: none;
-	background-color: #49e819;
-	box-shadow: 0 0 50px #49e819;
+  animation: none;
+  background-color: #49e819;
+  box-shadow: 0 0 50px #49e819;
 }
 
 .button-radioactive:active:focus {
-	animation: none;
-	background-color: #2ba805;
-	box-shadow: 0 0 50px #2ba805;
+  animation: none;
+  background-color: #2ba805;
+  box-shadow: 0 0 50px #2ba805;
 }
 
 @keyframes glowing {
-	0% {
-		background-color: #2ba805;
-		box-shadow: 0 0 5px #2ba805;
-	}
-	50% {
-		background-color: #49e819;
-		box-shadow: 0 0 20px #49e819;
-	}
-	100% {
-		background-color: #2ba805;
-		box-shadow: 0 0 5px #2ba805;
-	}
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
 }
 
 @keyframes glowing-font {
-	0% {
-		color: #2ba805;
-	}
-	50% {
-		color: #3cff00;
-	}
-	100% {
-		color: #2ba805;
-	}
+  0% {
+    color: #2ba805;
+  }
+  50% {
+    color: #3cff00;
+  }
+  100% {
+    color: #2ba805;
+  }
 }
 
 .info {
-	animation: glowing-font 1700ms infinite;
+  animation: glowing-font 1700ms infinite;
 }
 
 @keyframes flickerAnimation {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes flickerAnimation {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes flickerAnimation {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes flickerAnimation {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .animate-flicker {
-	-webkit-animation: flickerAnimation 2s infinite;
-	-moz-animation: flickerAnimation 2s infinite;
-	-o-animation: flickerAnimation 2s infinite;
-	animation: flickerAnimation 2s infinite;
+  -webkit-animation: flickerAnimation 2s infinite;
+  -moz-animation: flickerAnimation 2s infinite;
+  -o-animation: flickerAnimation 2s infinite;
+  animation: flickerAnimation 2s infinite;
 }
 
 .img-overlay {
-	text-shadow: black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px,
-		black 0px 0px 3px, black 0px 0px 3px;
+  text-shadow: black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px,
+    black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px,
+    black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px,
+    black 0px 0px 3px, black 0px 0px 3px, black 0px 0px 3px;
 }
 
 .theme-pink {
-	color: var(--pink-color);
+  color: var(--pink-color);
 }
 
 .card-img-overlay {
-	.card-link {
-		text-decoration: none;
-	}
+  .card-link {
+    text-decoration: none;
+  }
 }
 
 .card-img-overlay:hover {
-	.card-link {
-		text-decoration: underline;
-	}
+  .card-link {
+    text-decoration: underline;
+  }
 }

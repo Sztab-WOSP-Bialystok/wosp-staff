@@ -11,7 +11,7 @@ export default function Offer() {
     <Container fluid>
       <Row>
         <Col className="d-flex justify-content-center my-3">
-          <h2>Nasza oferta</h2>
+          <h2 className="img-overlay">Nasza oferta</h2>
         </Col>
       </Row>
       <Row className="d-flex justify-content-center">
