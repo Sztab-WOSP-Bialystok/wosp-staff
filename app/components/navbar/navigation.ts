@@ -13,7 +13,7 @@ export enum Links {
   NEWS = "https://www.facebook.com/bialystokwosp",
   VOLOUNTEERS = "/volounteers",
   MONEY_BOX = "/money-box",
-  GALLERY = "https://www.facebook.com/bialystokwosp/photos_albums",
+  GALLERY = "https://www.facebook.com/bialystokwosp/photos",
 }
 
 export const navigations: NavigationElement[] = [
