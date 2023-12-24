@@ -57,7 +57,7 @@ export default function Page() {
       </Row>
 
       <Row className="my-4">
-        <Col className="d-flex flex-column align-items-center justify-content-center text-center">
+        <Col className="d-flex flex-column align-items-center justify-content-center text-center img-overlay">
           <h2>Kogo szukamy</h2>
           <span>
             Szukamy&nbsp;do&nbsp;naszego zespołu chętnych i&nbsp;zmobilizowanych
@@ -74,7 +74,7 @@ export default function Page() {
       </Row>
 
       <Row className="my-4">
-        <Col className="d-flex flex-column align-items-center justify-content-center text-center">
+        <Col className="d-flex flex-column align-items-center justify-content-center text-center img-overlay">
           <h1>Gorąco zapraszamy!</h1>
         </Col>
       </Row>
