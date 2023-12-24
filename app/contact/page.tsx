@@ -21,16 +21,14 @@ export default function Page() {
               <Card.Title>
                 <h2>Godziny otwarcia siedziby Sztabu</h2>
               </Card.Title>
-              <Card.Text>
-                <h3 className="my-3">Środa i piątek 17:00-20:00</h3>
-                <h4 className="my-3">ul. Warszawska 50 lok. 206, Białystok</h4>
-                <h5 className="my-3 theme-pink img-overlay">
-                  UWAGA! W celu umówienia&nbsp;się&nbsp;na spotkanie bądź
-                  dostarczenia przedmiotu&nbsp;na aukcje&nbsp;poza podanymi
-                  godzinami prosimy&nbsp;o wcześniejszy kontakt
-                  telefoniczny&nbsp;z odpowiednim koordynatorem
-                </h5>
-              </Card.Text>
+              <h3 className="my-3">Środa i piątek 17:00-20:00</h3>
+              <h4 className="my-3">ul. Warszawska 50 lok. 206, Białystok</h4>
+              <h5 className="my-3 theme-pink img-overlay">
+                UWAGA! W celu umówienia&nbsp;się&nbsp;na spotkanie bądź
+                dostarczenia przedmiotu&nbsp;na aukcje&nbsp;poza podanymi
+                godzinami prosimy&nbsp;o wcześniejszy kontakt
+                telefoniczny&nbsp;z odpowiednim koordynatorem
+              </h5>
             </Card.Body>
           </Card>
         </Col>
