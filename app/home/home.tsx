@@ -15,6 +15,7 @@ import {
   navigations,
 } from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
+import HonoraryPatronageSection from "./sections/honorary-patriage/honorary-patronage-section";
 
 export default function Home() {
   const router = useRouter();
@@ -76,6 +77,14 @@ export default function Home() {
             style={{ fontSize: 60, alignSelf: "baseline" }}
           ></i>
         </Col>
+      </Row>
+
+      <Row
+        style={{
+          backgroundColor: "white",
+        }}
+      >
+        <HonoraryPatronageSection />
       </Row>
 
       <Row>
