@@ -1,8 +1,8 @@
 import Link from "next/link";
-import logo from "public/images/herb_honorowy_patronat.jpg";
+import logo from "./../../../../public/images/herb_honorowy_patronat.jpg";
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import externalSources from "../../../../public/info/external-sources.json";
+import externalSources from "./../../../../public/info/external-sources.json";
 import { EXTERNAL_SOURCE_KEYS } from "../../../consts/external-source-keys.const";
 import { ExteralSource } from "../../../faq/components/volounteerTabHeader";
 
@@ -19,6 +19,8 @@ export default function HonoraryPatronageSection() {
           xs={{ span: 10, offset: 1 }}
           sm={{ span: 4, offset: 1 }}
           md={{ span: 4, offset: 2 }}
+          lg={{ span: 3, offset: 2 }}
+          xl={{ span: 2, offset: 3 }}
         >
           <img src={logo.src} width={"100%"} style={{ maxHeight: "50%" }} />
         </Col>

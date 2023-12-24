@@ -39,7 +39,7 @@ export default function Home() {
           backgroundColor: "black",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
-          backgroundPosition: "100% 70%",
+          backgroundPosition: "60% 70%",
         }}
       >
         <Col
