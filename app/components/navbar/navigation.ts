@@ -15,6 +15,7 @@ export enum Links {
   MONEY_BOX = "/money-box",
   GALLERY = "https://www.facebook.com/bialystokwosp/photos",
   CONCERTS = "/concerts",
+  MARATHONS = "/marathons",
 }
 
 export const navigations: NavigationElement[] = [
@@ -45,6 +46,11 @@ export const navigations: NavigationElement[] = [
   {
     name: "Koncerty",
     link: Links.CONCERTS,
+    showInNavbar: true,
+  },
+  {
+    name: "Maratony",
+    link: Links.MARATHONS,
     showInNavbar: true,
   },
   {
