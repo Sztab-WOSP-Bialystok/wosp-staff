@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-      <html lang="pl-Pl">
-        <body>
-          <Navbar />
-          {children}
-          <AppFooter />
-        </body>
-      </html>
+    <html lang="pl-Pl" data-bs-theme="dark">
+      <body>
+        <Navbar />
+        {children}
+        <AppFooter />
+      </body>
+    </html>
   );
 }
