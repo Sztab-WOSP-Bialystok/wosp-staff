@@ -14,6 +14,7 @@ export enum Links {
   VOLOUNTEERS = "/volounteers",
   MONEY_BOX = "/money-box",
   GALLERY = "https://www.facebook.com/bialystokwosp/photos",
+  CONCERTS = "/concerts"
 }
 
 export const navigations: NavigationElement[] = [
@@ -39,6 +40,11 @@ export const navigations: NavigationElement[] = [
   {
     name: "Dołącz do nas",
     link: Links.COLLABORATION,
+    showInNavbar: true,
+  },
+  {
+    name: "Koncerty",
+    link: Links.CONCERTS,
     showInNavbar: true,
   },
   {
