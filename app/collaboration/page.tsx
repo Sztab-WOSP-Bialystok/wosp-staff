@@ -1,6 +1,4 @@
-"use client";
-
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "../bootstrap";
 import Offer from "./components/offer/offer";
 
 import collaborationBg from "public/images/collaboration_bg_dark.jpg";

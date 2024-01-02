@@ -1,6 +1,6 @@
 import Link from "next/link";
 import externalSources from "../../../public/info/external-sources.json";
-import { Nav } from "react-bootstrap";
+import { Nav } from "../../bootstrap";
 
 export type ExteralSource = {
   key: string;

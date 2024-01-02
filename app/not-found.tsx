@@ -1,8 +1,10 @@
 "use client";
+
 import { useRouter } from 'next/navigation';
-import caveBg from "public/images/cave.jpg";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import caveBg from "../public/images/cave.jpg";
+
 import { Links, navigations } from "./components/navbar/navigation";
+import { Button, Col, Container, Row } from './bootstrap';
 
 export default function NotFound() {
   const router = useRouter();

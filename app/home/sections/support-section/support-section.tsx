@@ -1,8 +1,8 @@
 import supportSectionData from "../../../../public/info/support-section-data.json";
-import { Col, Container, Row } from "react-bootstrap";
 import SupportCard from "./section-card";
 import { SectionCardData } from "./types/sectionTypes";
 import spiral from "../../../../public/images/40A_S_32FinalWOSP2024_grafika_fragment_podglad.png";
+import { Col, Container, Row } from "../../../bootstrap";
 
 export default function SupportSection() {
   const data: SectionCardData[] = supportSectionData;

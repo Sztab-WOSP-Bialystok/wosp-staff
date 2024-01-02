@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "../../../bootstrap";
 
 export interface OfferData {
   title: string;
@@ -13,30 +13,30 @@ type Props = { data: OfferData };
 export default function OfferCard({ data }: Props) {
   return (
     <Card className="d-flex justify-content-center" style={{ height: "100%" }}>
-      <Card.Img
+      <CardImg
         fetchPriority="high"
         variant="top"
         src={data.lightImgSrc}
         style={{ objectFit: "cover", height: 150 }}
         className="d-none d-md-block"
       />
-      <Card.Img
+      <CardImg
         fetchPriority="high"
         variant="top"
         src={data.darkImgSrc}
         style={{ objectFit: "cover", height: 170 }}
         className="d-block d-md-none rounded-bottom"
       />
-      <Card.ImgOverlay
+      <CardImgOverlay
         className={"d-block d-md-none text-light"}
       >
-        <Card.Title className="img-overlay">{data.title}</Card.Title>
-        <Card.Text className="img-overlay">{data.description}</Card.Text>
-      </Card.ImgOverlay>
-      <Card.Body className="d-none d-md-block">
-        <Card.Title>{data.title}</Card.Title>
-        <Card.Text>{data.description}</Card.Text>
-      </Card.Body>
+        <CardTitle className="img-overlay">{data.title}</CardTitle>
+        <CardText className="img-overlay">{data.description}</CardText>
+      </CardImgOverlay>
+      <CardBody className="d-none d-md-block">
+        <CardTitle>{data.title}</CardTitle>
+        <CardText>{data.description}</CardText>
+      </CardBody>
     </Card>
   );
 }

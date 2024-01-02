@@ -1,5 +1,11 @@
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
+import {
+  Card,
+  CardBody,
+  CardText,
+  CardTitle,
+  ListGroup,
+  ListGroupItem,
+} from "../bootstrap";
 
 export interface ContactData {
   key: string;
@@ -16,26 +22,26 @@ type Props = { data: ContactData };
 export default function ContactCard({ data }: Props) {
   return (
     <Card className="justify-content-center">
-      <Card.Body style={{ height: 100 }}>
-        <Card.Title>{data.title}</Card.Title>
-        <Card.Text>
+      <CardBody style={{ height: 100 }}>
+        <CardTitle>{data.title}</CardTitle>
+        <CardText>
           {data.surname} {data.name}
-        </Card.Text>
-      </Card.Body>
+        </CardText>
+      </CardBody>
       <ListGroup className="list-group-flush">
         {data.mail ? (
-          <ListGroup.Item>
+          <ListGroupItem>
             <i className="bi bi-envelope me-1"></i>
             <a href={"mailto:" + data.mail}>{data.mail}</a>
-          </ListGroup.Item>
+          </ListGroupItem>
         ) : (
           <></>
         )}
         {data.phone ? (
-          <ListGroup.Item>
+          <ListGroupItem>
             <i className="bi bi-telephone-fill me-1"></i>
             <a href={"tel:" + data.phone}>{data.phone}</a>
-          </ListGroup.Item>
+          </ListGroupItem>
         ) : (
           <></>
         )}

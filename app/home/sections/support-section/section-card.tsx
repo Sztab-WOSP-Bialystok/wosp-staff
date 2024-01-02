@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, CardBody, CardText, CardTitle } from "../../../bootstrap";
 import { SectionCardData } from "./types/sectionTypes";
 
 type Props = { data: SectionCardData };
@@ -6,22 +6,22 @@ type Props = { data: SectionCardData };
 export default function SectionCard({ data }: Props) {
   return (
     <Card className="justify-content-center card-navigate">
-      <Card.Body
+      <CardBody
         className="d-flex flex-column"
         style={{
           objectFit: "cover",
           height: 200,
         }}
       >
-        <Card.Title>
+        <CardTitle>
           <h4>{data.title}</h4>
-        </Card.Title>
-        <Card.Text>{data.description}</Card.Text>
+        </CardTitle>
+        <CardText>{data.description}</CardText>
         <Card.Link className="mt-auto" href={data.link}>
           {data.buttonLabel}
           <i className="ms-2 bi bi-box-arrow-up-right"></i>
         </Card.Link>
-      </Card.Body>
+      </CardBody>
     </Card>
   );
 }

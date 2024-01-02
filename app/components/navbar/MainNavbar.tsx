@@ -1,16 +1,13 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+"use client";
+
 import BrandNavbar from "./BrandNavbar";
 import { navigations } from "./navigation";
 import NavElement from "./NavElement";
+import { Container, Nav, Navbar } from "../../bootstrap";
 
 function MainNavbar() {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="xl"
-      sticky="top"
-      variant="dark"
-    >
+    <Navbar collapseOnSelect expand="xl" sticky="top" variant="dark">
       <Container>
         <BrandNavbar />
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="p-0" />

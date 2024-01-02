@@ -1,8 +1,9 @@
-import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
 import Link from "next/link";
+import { Nav, Navbar } from "../../bootstrap";
 
 function BrandNavbar() {
   return (
+
     <Navbar.Brand className="me-0 me-sm-2 d-flex">
       <Nav.Link
         as={Link}

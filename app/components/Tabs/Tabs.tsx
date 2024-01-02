@@ -1,5 +1,5 @@
+import { Tab, Tabs } from "../../bootstrap";
 import { TabElement } from "./types";
-import { Tabs, Tab, Card } from "react-bootstrap";
 
 type Props = {
   tabs: TabElement[];
@@ -16,9 +16,9 @@ const StyledTabs = ({ tabs, initialTab }: Props) => {
           title={tabEl.name}
         >
           {/* <Card style={{ borderTop: "none", borderRadius: '0 2px 2px 2px' }}>
-            <Card.Body> */}
+            <CardBody> */}
               {tabEl.content}
-              {/* </Card.Body>
+              {/* </CardBody>
           </Card> */}
         </Tab>
       ))}
