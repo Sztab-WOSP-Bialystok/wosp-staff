@@ -1,5 +1,3 @@
-"use client";
-
 import { Col, Container, Row } from "../bootstrap";
 import Offer from "./components/offer/offer";
 

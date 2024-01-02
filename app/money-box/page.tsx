@@ -1,11 +1,10 @@
-"use client";
 import contactData from "../../public/info/contact-data.json";
 import ContactCard, { ContactData } from "../contact/contact-card";
 import Link from "next/link";
 import { CONTACT_KEYS } from "../consts/contact-keys.const";
-import spiral from "public/images/41A_S_32FinalWOSP2024_grafika_fragment_podglad.png";
+import spiral from "../../public/images/41A_S_32FinalWOSP2024_grafika_fragment_podglad.png";
 import { Metadata } from "next";
-import { Accordion, Card, Col, Container, Row } from "../bootstrap";
+import { Accordion, AccordionBody, AccordionHeader, AccordionItem, Card, Col, Container, Row } from "../bootstrap";
 
 //TODO: Configure SSR
 export const metadata: Metadata = {
@@ -37,35 +36,35 @@ export default function Page() {
           </Col>
           <Col xl={{ span: 8, offset: 2 }} className="my-3 my-xl-5">
             <Accordion defaultActiveKey={["0"]}>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>
+              <AccordionItem eventKey="0">
+                <AccordionHeader>
                   Czym jest Firmowa Puszka Stacjonarna?
-                </Accordion.Header>
-                <Accordion.Body>
+                </AccordionHeader>
+                <AccordionBody>
                   Firmowa Puszka Stacjonarna to tekturowa puszka kwestarska,
                   która przypisana jest do konkretnego Opiekuna i&nbsp;lokalu.
                   Sztab WOŚP prowadzi nadzór nad prowadzoną kwestą (wydaje
                   niezbędne materiały oraz rozlicza zbiórkę). Zbiórka do
                   Firmowych Puszek Stacjonarnych może odbywać się w dniach
                   10.12.2023 r. – 28.01.2024.
-                </Accordion.Body>
-              </Accordion.Item>
+                </AccordionBody>
+              </AccordionItem>
 
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>
+              <AccordionItem eventKey="1">
+                <AccordionHeader>
                   Kto może ubiegać się o Puszkę Stacjonarną?
-                </Accordion.Header>
-                <Accordion.Body>
+                </AccordionHeader>
+                <AccordionBody>
                   Każda firma i&nbsp;instytucja. Osoby prywatne nie mogą uzyskać
                   Puszki Stacjonarnej.
-                </Accordion.Body>
-              </Accordion.Item>
+                </AccordionBody>
+              </AccordionItem>
 
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>
+              <AccordionItem eventKey="2">
+                <AccordionHeader>
                   Jak mogę zarejestrować Puszkę Stacjonarną?
-                </Accordion.Header>
-                <Accordion.Body>
+                </AccordionHeader>
+                <AccordionBody>
                   <div>
                     <h6>
                       <span>Przez portal: </span>
@@ -98,8 +97,8 @@ export default function Page() {
                       Stacjonarnych:
                     </span>
                   </div>
-                </Accordion.Body>
-              </Accordion.Item>
+                </AccordionBody>
+              </AccordionItem>
             </Accordion>
           </Col>
         </Row>

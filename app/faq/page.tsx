@@ -1,5 +1,4 @@
-"use client"; //TODO: Configure SSR
-import { Card, Col, Container, Row } from "../bootstrap";
+import { Card, CardBody, CardTitle, Col, Container, Row } from "../bootstrap";
 import { Tabs } from "../components/Tabs";
 import { faqTabs } from "./components/faqTabs";
 import { Metadata } from "next";
@@ -19,10 +18,10 @@ export default function Page() {
       <Row>
         <Col xl={{ span: 8, offset: 2 }} className="my-3">
           <Card>
-            <Card.Body>
-              <Card.Title></Card.Title>
+            <CardBody>
+              <CardTitle></CardTitle>
               <Tabs tabs={faqTabs} />
-            </Card.Body>
+            </CardBody>
           </Card>
         </Col>
       </Row>

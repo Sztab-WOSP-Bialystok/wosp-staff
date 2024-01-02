@@ -1,9 +1,7 @@
-"use client";
-
 import ContactCard, { ContactData } from "./contact-card";
 import contactData from "../../public/info/contact-data.json";
 import { Metadata } from "next";
-import { Card, Col, Container, Row } from "../bootstrap";
+import { Card, CardBody, CardTitle, Col, Container, Row } from "../bootstrap";
 
 export const metadata: Metadata = {
   title: 'Kontakt',
@@ -22,10 +20,10 @@ export default function Page() {
       <Row>
         <Col xs={12} xl={8} className="my-3 my-xl-5">
           <Card>
-            <Card.Body>
-              <Card.Title>
+            <CardBody>
+              <CardTitle>
                 <h2>Godziny otwarcia siedziby Sztabu</h2>
-              </Card.Title>
+              </CardTitle>
               <h3 className="my-3">Środa i piątek 17:00-20:00</h3>
               <h4 className="my-3">ul. Warszawska 50 lok. 206, Białystok</h4>
               <h5 className="my-3 theme-pink img-overlay">
@@ -34,7 +32,7 @@ export default function Page() {
                 godzinami prosimy&nbsp;o wcześniejszy kontakt
                 telefoniczny&nbsp;z odpowiednim koordynatorem
               </h5>
-            </Card.Body>
+            </CardBody>
           </Card>
         </Col>
       </Row>
