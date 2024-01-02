@@ -4,7 +4,6 @@ import holidaySectionBg from "public/images/cards/volounteers_bg_dark.jpg";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
 import {
   WospInternalLink,
   wospInternalLinks,
@@ -16,6 +15,7 @@ import {
 } from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
 import HonoraryPatronageSection from "./sections/honorary-patriage/honorary-patronage-section";
+import { Button, Col, Container, Row } from "../bootstrap";
 
 export default function Home() {
   const router = useRouter();

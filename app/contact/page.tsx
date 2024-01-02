@@ -1,8 +1,13 @@
 "use client";
 
-import { Card, Col, Container, Row } from "react-bootstrap";
 import ContactCard, { ContactData } from "./contact-card";
 import contactData from "../../public/info/contact-data.json";
+import { Metadata } from "next";
+import { Card, Col, Container, Row } from "../bootstrap";
+
+export const metadata: Metadata = {
+  title: 'Kontakt',
+}
 
 export default function Page() {
   const data: ContactData[] = contactData;

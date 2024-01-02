@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "../../bootstrap";
 import { socialMediaLinks } from "./models/socialMediaLink";
 import { wospInternalLinks } from "./models/wospInternalLink";
 

@@ -1,7 +1,12 @@
 "use client"; //TODO: Configure SSR
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "../bootstrap";
 import { Tabs } from "../components/Tabs";
 import { faqTabs } from "./components/faqTabs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+};
 
 export default function Page() {
   return (

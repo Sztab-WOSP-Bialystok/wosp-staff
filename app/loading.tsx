@@ -1,6 +1,7 @@
 "use client";
 
-import { Spinner } from "react-bootstrap";
+import { Spinner } from "./bootstrap";
+
 
 export default function Page() {
   return (

@@ -1,5 +1,5 @@
+import { Tab, Tabs } from "../../bootstrap";
 import { TabElement } from "./types";
-import { Tabs, Tab, Card } from "react-bootstrap";
 
 type Props = {
   tabs: TabElement[];

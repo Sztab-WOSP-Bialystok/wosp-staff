@@ -1,10 +1,10 @@
 import Link from "next/link";
 import logo from "./../../../../public/images/herb_honorowy_patronat.jpg";
 import { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import externalSources from "./../../../../public/info/external-sources.json";
 import { EXTERNAL_SOURCE_KEYS } from "../../../consts/external-source-keys.const";
 import { ExteralSource } from "../../../faq/components/volounteerTabHeader";
+import { Col, Container, Row } from "../../../bootstrap";
 
 export default function HonoraryPatronageSection() {
   const [bialystokWeb] = useState<ExteralSource>(

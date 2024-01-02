@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card } from "../../../bootstrap";
 import { SectionCardData } from "./types/sectionTypes";
 
 type Props = { data: SectionCardData };

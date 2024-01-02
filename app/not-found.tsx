@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from 'next/navigation';
 import caveBg from "public/images/cave.jpg";
-import { Button, Col, Container, Row } from "react-bootstrap";
+
 import { Links, navigations } from "./components/navbar/navigation";
 
 export default function NotFound() {

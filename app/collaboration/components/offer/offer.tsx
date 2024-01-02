@@ -1,6 +1,6 @@
 "use client";
 
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "../../../bootstrap";
 import OfferCard, { OfferData } from "./offer-card";
 import offerCardData from "./offer-data.json";
 

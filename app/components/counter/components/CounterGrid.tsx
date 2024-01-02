@@ -1,6 +1,5 @@
 import {FC} from "react";
 import {DisneyFont} from "../../styledComponents/DisnayFont";
-import {Col, Stack} from "react-bootstrap";
 import {parseToDoubleDigits} from "../../../utils/DisplayUtils";
 
 type CounterGridProps = {

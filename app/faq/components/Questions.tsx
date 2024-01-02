@@ -1,6 +1,6 @@
 import {FC, Fragment} from "react";
 import {Question} from "./types";
-import {Row, Stack} from "react-bootstrap";
+import { Stack } from "../../bootstrap";
 
 type QuestionsProps = {
     questions: Question[]
