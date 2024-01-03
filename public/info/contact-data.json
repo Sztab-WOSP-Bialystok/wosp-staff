@@ -16,5 +16,14 @@
         "phone": "+11111111111",
         "title": "title_2",
         "imagePath": "public/images/Sample_image_light.png"
+    },
+    {
+        "key": "admin",
+        "mail": "address_name_3@domain.com",
+        "surname": "surname_3",
+        "name": "name_3",
+        "phone": "+22222222222",
+        "title": "title_3",
+        "imagePath": "public/images/Sample_image_light.png"
     }
 ]
