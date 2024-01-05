@@ -45,11 +45,6 @@ export const navigations: NavigationElement[] = [
     showInNavbar: true,
   },
   {
-    name: "Koncerty",
-    link: Links.CONCERTS,
-    showInNavbar: true,
-  },
-  {
     name: "Maratony",
     link: Links.MARATHONS,
     showInNavbar: true,
