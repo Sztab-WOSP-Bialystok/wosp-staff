@@ -4,7 +4,6 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 export default function Page() {
 	return (
-		<Row>
 			<Container className="mt-2 mt-sm-3 mt-xl-5">
 				<Row>
 					<Col
