@@ -27,6 +27,5 @@ export default function Page() {
 					</Col>
 				</Row>
 			</Container>
-		</Row>
 	);
 }
