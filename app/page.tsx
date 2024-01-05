@@ -1,5 +1,11 @@
+import ErrorBoundary from "./error/errorBoundary";
 import Home from "./home/home";
 
 export default function Page() {
-  return <Home></Home>;
+ 
+  return (
+    <ErrorBoundary>
+      <Home></Home>
+    </ErrorBoundary>
+  );
 }
