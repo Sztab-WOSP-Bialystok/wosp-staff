@@ -1,65 +1,110 @@
 "use client";
 
-import { Container, Row, Col, Button, Card, Accordion } from "react-bootstrap";
-import externalSource from "../../public/info/external-sources.json";
+import {
+	Container,
+	Row,
+	Col,
+	Button,
+	Card,
+	Accordion,
+	ListGroup,
+} from "react-bootstrap";
+import externalSourceData from "../../public/info/external-sources.json";
 import { EXTERNAL_SOURCE_KEYS } from "../consts/external-source-keys.const";
 
 export default function Page() {
-	const data = externalSource;
-	const marathonExternal = data.find(
+	const marathonExternal = externalSourceData.find(
 		(external) => external.key == EXTERNAL_SOURCE_KEYS.MARATHON_FORM
 	);
 	return (
-		<Container className="m-2 mt-sm-3 m-xl-5">
-                        <Row>
-			                  <Col xl={{ span: 8, offset: 2 }} className="my-3 img-overlay">
-				<h1 className="text-center">Maraton</h1>
-				<p className="px-5 px-md-0">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Natus in numquam quis omnis est ipsa. Non fugiat inventore
-					incidunt quia aliquam labore tenetur dolorum culpa quos,
-					eius nostrum voluptate omnis.
-				</p>
-			</Col>
+		<Container className="my-3 my-xl-5">
+			<Row>
+				<Col xl={{ span: 8, offset: 2 }} className="my-2 img-overlay">
+					<h1 className="text-center">Zapisy na bieg trwają!</h1>
+					<p className="text-center px-5 px-md-0">
+						Biegnij dla zdrowia i zabawy! Dołącz do tysięcy biegaczy
+						w maratonie w Białymstoku! Nie przegap tej okazji!
+					</p>
+				</Col>
 
-			<Col xl={{ span: 8, offset: 2 }} className="my-3 my-xl-5">
-				<Accordion defaultActiveKey={["0"]}>
-					<Accordion.Item eventKey="0">
-						<Accordion.Header>Dlaczego biegniemy?</Accordion.Header>
-						<Accordion.Body>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Unde vel minima quos iste, libero vero iure
-							omnis magnam sapiente dolor modi facilis nesciunt
-							reiciendis labore eos. Provident, inventore porro!
-							Ipsam.
-						</Accordion.Body>
-					</Accordion.Item>
+				<Col xl={{ span: 8, offset: 2 }} className="my-3 my-xl-5">
+					<Accordion defaultActiveKey={["0"]}>
+						<Accordion.Item eventKey="0">
+							<Accordion.Header>
+								Jak zarejestrować się na bieg?
+							</Accordion.Header>
 
-					<Accordion.Item eventKey="1">
-						<Accordion.Header>Regulamin</Accordion.Header>
-						<Accordion.Body>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Saepe fugit placeat esse asperiores, dolore
-							atque odio cupiditate aliquam ut omnis nam accusamus
-							suscipit recusandae minima at ea molestias
-							distinctio! Reiciendis.
-						</Accordion.Body>
-					</Accordion.Item>
+							<Accordion.Body>
+								<ListGroup as="ol" numbered>
+									<ListGroup.Item variant="light">
+										Należy otworzyć formularz zgłoszeniowy
+										dostępny poniżej.
+									</ListGroup.Item>
+									<ListGroup.Item variant="dark">
+										Wybrać odpowiednią opcję w zależności od
+										tego czy jest się uczestnikiem czy
+										opiekunem uczestnika.
+									</ListGroup.Item>
+									<ListGroup.Item variant="light">
+										Uzupełnić dane.
+									</ListGroup.Item>
+									<ListGroup.Item variant="dark">
+										Kliknąć "prześlij formularz".
+									</ListGroup.Item>
+									<ListGroup.Item variant="light">
+										Oczekiwać na potwierdzenie z naszej
+										strony 🙂 ( UWAGA: wiadomości zwrotne
+										NIE SĄ generowane automatycznie,
+										sprawdzamy formularze i odpisujemy
+										własnoręcznie dlatego też czas
+										oczekiwania na wiadomość może być
+										wydłużony).
+									</ListGroup.Item>
+								</ListGroup>
+							</Accordion.Body>
+						</Accordion.Item>
 
-					<Accordion.Item eventKey="2">
-						<Accordion.Header>Instrukcja biegania</Accordion.Header>
-						<Accordion.Body>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Totam optio ullam sit cum rerum, aut ex eos
-							natus alias eveniet pariatur magni neque perferendis
-							aperiam non voluptatum officia reprehenderit
-							reiciendis.
-						</Accordion.Body>
-					</Accordion.Item>
-				</Accordion>
-			</Col>
+						<Accordion.Item eventKey="1">
+							<Accordion.Header>Opłata startowa</Accordion.Header>
 
-				<Col xl={{ span: 8, offset: 2 }} className="my-3">
+							<Accordion.Body>
+								Jest pobierana w momencie odbierania pakietów
+								startowych (symboliczny wrzut do puszki).
+							</Accordion.Body>
+						</Accordion.Item>
+
+						<Accordion.Item eventKey="2">
+							<Accordion.Header>
+								Dostępne trasy biegów
+							</Accordion.Header>
+
+							<Accordion.Body>
+								<ListGroup as="ol" numbered>
+									<ListGroup.Item variant="light">
+										Bieg małego superbohatera: 300 metrów
+										dzieci do 9 lat
+									</ListGroup.Item>
+									<ListGroup.Item variant="dark">
+										Bieg Chillowy kilos: 1 km (brak
+										ograniczeń wiekowych)
+									</ListGroup.Item>
+									<ListGroup.Item variant="light">
+										Bieg Fantastyczna piątka: 5 km (brak
+										ograniczeń wiekowych)
+									</ListGroup.Item>
+
+									<p className="my-2 mt-4">
+										Mapki zostaną udostępnione bliżej
+										terminu wydarzenia o czym poinformujemy
+										na naszych social mediach 🙂
+									</p>
+								</ListGroup>
+							</Accordion.Body>
+						</Accordion.Item>
+					</Accordion>
+				</Col>
+
+				<Col xl={{ span: 8, offset: 2 }} style={{ marginTop: "8rem", marginBottom: "1rem" }}>
 					<Card>
 						<Card.Body>
 							<div className="text-center text-md-start">
@@ -71,7 +116,10 @@ export default function Page() {
 									Wejdź w formularz i wypełnij (UWAGA:
 									przekierowanie do innej strony):
 								</h6>
-								<Button href={marathonExternal.url} className="button-radioactive">
+								<Button
+									href={marathonExternal.url}
+									className="button-radioactive"
+								>
 									Zapisz się!
 								</Button>
 							</div>
