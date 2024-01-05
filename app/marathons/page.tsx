@@ -58,7 +58,6 @@ export default function Page() {
 				</Accordion>
 			</Col>
 
-			<Row>
 				<Col xl={{ span: 8, offset: 2 }} className="my-3">
 					<Card>
 						<Card.Body>
