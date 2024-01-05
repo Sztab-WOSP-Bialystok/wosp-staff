@@ -11,7 +11,8 @@ export default function Page() {
 	);
 	return (
 		<Container className="m-2 mt-sm-3 m-xl-5">
-			<Col xl={{ span: 8, offset: 2 }} className="my-3 img-overlay">
+                        <Row>
+			                  <Col xl={{ span: 8, offset: 2 }} className="my-3 img-overlay">
 				<h1 className="text-center">Maraton</h1>
 				<p className="px-5 px-md-0">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
