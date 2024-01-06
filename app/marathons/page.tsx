@@ -68,8 +68,13 @@ export default function Page() {
 							<Accordion.Header>Opłata startowa</Accordion.Header>
 
 							<Accordion.Body>
-								Jest pobierana w momencie odbierania pakietów
-								startowych (symboliczny wrzut do puszki).
+								<ListGroup>
+									<ListGroup.Item variant="light">
+										Jest pobierana w momencie odbierania
+										pakietów startowych (symboliczny wrzut
+										do puszki).
+									</ListGroup.Item>
+								</ListGroup>
 							</Accordion.Body>
 						</Accordion.Item>
 
@@ -104,7 +109,10 @@ export default function Page() {
 					</Accordion>
 				</Col>
 
-				<Col xl={{ span: 8, offset: 2 }} style={{ marginTop: "8rem", marginBottom: "1rem" }}>
+				<Col
+					xl={{ span: 8, offset: 2 }}
+					style={{ marginTop: "8rem", marginBottom: "1rem" }}
+				>
 					<Card>
 						<Card.Body>
 							<div className="text-center text-md-start">
