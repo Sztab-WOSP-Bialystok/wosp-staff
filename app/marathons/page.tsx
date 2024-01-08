@@ -22,7 +22,7 @@ export default function Page() {
 				<Col xl={{ span: 8, offset: 2 }} className="my-2 img-overlay">
 					<h1 className="text-center">Zapisy na bieg trwają!</h1>
 					<p className="text-center px-5 px-md-0">
-						Biegnij dla zdrowia i zabawy! Dołącz do tysięcy biegaczy
+						Biegnij dla zdrowia i&nbsp;zabawy! Dołącz do tysięcy biegaczy
 						w maratonie w Białymstoku! Nie przegap tej okazji!
 					</p>
 				</Col>
