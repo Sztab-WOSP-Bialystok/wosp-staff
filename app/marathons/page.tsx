@@ -13,7 +13,7 @@ import externalSourceData from "../../public/info/external-sources.json";
 import { EXTERNAL_SOURCE_KEYS } from "../consts/external-source-keys.const";
 
 export default function Page() {
-	const marathonExternal = externalSourceData.find(
+	const [marathonExternal ] = useState<ExteralSource>(externalSourceData.find((x) => x.key ==EXTERNAL_SOURCE_KEYS.BIALYSTOK_WEB)
 		(external) => external.key == EXTERNAL_SOURCE_KEYS.MARATHON_FORM
 	);
 	return (
