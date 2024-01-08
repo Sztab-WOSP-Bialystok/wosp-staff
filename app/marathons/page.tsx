@@ -121,7 +121,7 @@ export default function Page() {
 									nami!
 								</h1>
 								<h6>
-									Wejdź w formularz i wypełnij (UWAGA:
+									Wejdź w formularz i&nbsp;wypełnij (UWAGA:
 									przekierowanie do innej strony):
 								</h6>
 								<Button
