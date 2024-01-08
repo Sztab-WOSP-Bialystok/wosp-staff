@@ -15,7 +15,6 @@ export enum Links {
   VOLOUNTEERS = "/volounteers",
   MONEY_BOX = "/money-box",
   GALLERY = "https://www.facebook.com/bialystokwosp/photos",
-  CONCERTS = "/concerts",
   MARATHONS = "/marathons",
 }
 
