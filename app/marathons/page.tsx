@@ -117,7 +117,7 @@ export default function Page() {
 						<Card.Body>
 							<div className="text-center text-md-start">
 								<h1 className="info">
-									Nie czekaj, zarejestruj się i biegnij z
+									Nie czekaj, zarejestruj się i&nbsp;biegnij z&nbsp;
 									nami!
 								</h1>
 								<h6>
