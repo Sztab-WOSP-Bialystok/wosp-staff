@@ -55,7 +55,7 @@ export default function Page() {
 										Oczekiwać na potwierdzenie z naszej
 										strony 🙂 ( UWAGA: wiadomości zwrotne
 										NIE SĄ generowane automatycznie,
-										sprawdzamy formularze i odpisujemy
+										sprawdzamy formularze i&nbsp;odpisujemy
 										własnoręcznie dlatego też czas
 										oczekiwania na wiadomość może być
 										wydłużony).
