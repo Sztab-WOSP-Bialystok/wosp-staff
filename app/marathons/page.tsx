@@ -41,7 +41,7 @@ export default function Page() {
 										dostępny poniżej.
 									</ListGroup.Item>
 									<ListGroup.Item variant="dark">
-										Wybrać odpowiednią opcję w zależności od
+										Wybrać odpowiednią opcję w&nbsp;zależności od
 										tego czy jest się uczestnikiem czy
 										opiekunem uczestnika.
 									</ListGroup.Item>
