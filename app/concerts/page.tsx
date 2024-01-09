@@ -1,7 +1,6 @@
 "use client";
-
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Current } from "./concerts/current/current";
+import concertsPoster from "../../public/images/ConcertsPoster.jpg";
 
 export default function Page() {
 	return (
@@ -23,7 +22,7 @@ export default function Page() {
 				</Row>
 				<Row>
 					<Col xl={{ span: 8, offset: 2 }} className="my-3">
-						<Current></Current>
+					
 					</Col>
 				</Row>
 			</Container>
