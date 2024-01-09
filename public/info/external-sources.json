@@ -8,5 +8,10 @@
         "key": "bialystok_web",
         "title": "Strona miasta Białystok",
         "url": "https://www.bialystok.pl"
+    },
+    {
+        "key": "marathon_form",
+        "title": "Wypełnij formularz",
+        "url": "https://forms.gle/3VxvwMn8uRJmebDV8"
     }
 ]
