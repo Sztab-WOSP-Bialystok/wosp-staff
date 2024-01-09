@@ -1,5 +1,5 @@
 "use client";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 import concertsPoster from "../../public/images/ConcertsPoster.jpg";
 
 export default function Page() {
