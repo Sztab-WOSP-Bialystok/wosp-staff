@@ -1,9 +1,13 @@
-export type NavigationElement = {
-  link: string;
+export interface NavigationElement {
+  link?: string;
   name: string;
   disabled?: boolean;
   showInNavbar?: boolean;
-};
+}
+
+export interface NavigationElementGroup extends NavigationElement {
+  elements: NavigationElement[];
+}
 
 export enum Links {
   HOME = "/",
@@ -21,11 +25,6 @@ export enum Links {
 
 export const navigations: NavigationElement[] = [
   {
-    name: "Aktualności",
-    link: Links.NEWS,
-    showInNavbar: true,
-  },
-  {
     name: "Pytania",
     link: Links.FAQ,
     showInNavbar: true,
@@ -40,27 +39,47 @@ export const navigations: NavigationElement[] = [
     link: Links.HOME,
   },
   {
-    name: "Dołącz do nas",
-    link: Links.COLLABORATION,
-    showInNavbar: true,
-  },
+    name: "Bądź na bieżąco",
+    elements: [
+      {
+        name: "Aktualności - Facebook",
+        link: Links.NEWS,
+        showInNavbar: true,
+      },
+    ],
+  } as NavigationElementGroup,
   {
-    name: "Maratony",
-    link: Links.MARATHONS,
-    showInNavbar: true,
-  },
+    name: "Wsparcie Finału",
+    elements: [
+      {
+        name: "Dołącz do nas",
+        link: Links.COLLABORATION,
+        showInNavbar: true,
+      },
+      {
+        name: "Puszka stacjonarna",
+        link: Links.MONEY_BOX,
+        showInNavbar: true,
+      },
+    ],
+  } as NavigationElementGroup,
   {
-    name: "Koncerty",
-    link: Links.CONCERTS,
-    showInNavbar: true,
-  },
+    name: "Wydarzenia i imprezy",
+    elements: [
+      {
+        name: "Maratony",
+        link: Links.MARATHONS,
+        showInNavbar: true,
+      },
+      {
+        name: "Koncerty",
+        link: Links.CONCERTS,
+        showInNavbar: true,
+      },
+    ],
+  } as NavigationElementGroup,
   {
-    name: "Puszka stacjonarna",
-    link: Links.MONEY_BOX,
-    showInNavbar: true,
-  },
-  {
-    name: "Galeria",
+    name: "Galeria - Facebook",
     link: Links.GALLERY,
     showInNavbar: true,
   },
