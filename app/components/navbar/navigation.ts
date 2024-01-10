@@ -43,7 +43,7 @@ export const navigations: NavigationElement[] = [
     name: "Dołącz do nas",
     link: Links.COLLABORATION,
     showInNavbar: true,
-  }
+  },
   {
     name: "Maratony",
     link: Links.MARATHONS,
