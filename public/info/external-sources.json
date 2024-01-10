@@ -13,5 +13,10 @@
         "key": "marathon_form",
         "title": "Wypełnij formularz",
         "url": "https://forms.gle/3VxvwMn8uRJmebDV8"
+    },
+    {
+        "key": "marathon_fb_event",
+        "title": "Wydarzenie",
+        "url": "https://www.facebook.com/events/357470270221997"
     }
 ]
