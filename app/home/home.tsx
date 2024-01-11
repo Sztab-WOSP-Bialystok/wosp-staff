@@ -147,9 +147,10 @@ export default function Home() {
               variant="primary"
               size="lg"
               onClick={
-                newsNavigation.link
-                  ? () => router.push(newsNavigation.link)
-                  : () => {}
+                () => router.push(newsNavigation.link)
+                // newsNavigation.link
+                //   ? () => router.push(newsNavigation.link)
+                //   : () => {}
               }
             >
               <i className="bi bi-facebook"></i> WOŚP Białystok
