@@ -30,6 +30,11 @@ footer {
   background-color: var(--bs-body-bg);
 }
 
+.justify-content-center {
+  display: flex !important;
+}
+
+
 .card,
 .accordion {
   color: var(--wosp-color);

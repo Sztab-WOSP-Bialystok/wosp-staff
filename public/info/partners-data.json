@@ -1,0 +1,11 @@
+[
+    {
+        "groupName": "partner_group_1",
+        "partners": [
+            {
+                "name": "partner_1",
+                "imagePath": "images/cards/dev_bg_light.jpg"
+            }
+        ]
+    }
+]
