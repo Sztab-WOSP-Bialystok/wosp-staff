@@ -8,7 +8,6 @@ export type NavigationElement = {
 export enum Links {
   HOME = "/",
   FAQ = "/faq",
-  ERROR = "/error",
   CONTACT = "/contact",
   COLLABORATION = "/collaboration",
   NEWS = "https://www.facebook.com/bialystokwosp",
