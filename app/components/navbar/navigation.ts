@@ -17,12 +17,19 @@ export enum Links {
   GALLERY = "https://www.facebook.com/bialystokwosp/photos",
   MARATHONS = "/marathons",
   CONCERTS = "/concerts",
+  PARTNERS = "/partners",
+  SUPPORT = "/support",
 }
 
 export const navigations: NavigationElement[] = [
-  {
+{
     name: "Aktualności",
     link: Links.NEWS,
+    showInNavbar: false,
+  },
+  {
+    name: "Partnerzy",
+    link: Links.PARTNERS,
     showInNavbar: true,
   },
   {
@@ -36,13 +43,18 @@ export const navigations: NavigationElement[] = [
     showInNavbar: true,
   },
   {
+    name: "Wsparcie Finału",
+    link: Links.SUPPORT,
+    showInNavbar: true,
+  },
+  {
     name: "Strona główna",
     link: Links.HOME,
   },
   {
     name: "Dołącz do nas",
     link: Links.COLLABORATION,
-    showInNavbar: true,
+    showInNavbar: false,
   },
   {
     name: "Maratony",
@@ -52,7 +64,7 @@ export const navigations: NavigationElement[] = [
   {
     name: "Koncerty",
     link: Links.CONCERTS,
-    showInNavbar: true,
+    showInNavbar: false,
   },
   {
     name: "Puszka stacjonarna",
@@ -63,5 +75,10 @@ export const navigations: NavigationElement[] = [
     name: "Galeria",
     link: Links.GALLERY,
     showInNavbar: true,
+  },
+  {
+    name: "Aktualności",
+    link: Links.NEWS,
+    showInNavbar: false,
   },
 ];

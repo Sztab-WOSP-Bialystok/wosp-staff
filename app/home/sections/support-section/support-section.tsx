@@ -1,40 +1,46 @@
-import supportSectionData from "../../../../public/info/support-section-data.json";
-import { Col, Container, Row } from "react-bootstrap";
-import SupportCard from "./section-card";
-import { SectionCardData } from "./types/sectionTypes";
-import spiral from "../../../../public/images/40A_S_32FinalWOSP2024_grafika_fragment_podglad.png";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import {
+  Links,
+  NavigationElement,
+  navigations,
+} from "../../../components/navbar/navigation";
+import { Button, Col, Container, Row } from "react-bootstrap";
+
+import supportSectionBg from "public/images/section-bg/support.jpg";
 
 export default function SupportSection() {
-  const data: SectionCardData[] = supportSectionData;
+  const router = useRouter();
 
-  return data.filter((x) => x.display).length > 0 ? (
-    <Container fluid>
+  const [supportNavigation] = useState<NavigationElement>(
+    navigations.find((n) => n.link == Links.SUPPORT)
+  );
+
+  return (
+    <Container fluid className="px-0">
       <Row>
-        <Col className="d-flex justify-content-center img-overlay position-relative mb-4 mb-lg-5" style={{marginTop: "12rem"}}>
-          <h1>Wsparcie Finału</h1>
-          <img
-            src={spiral.src}
-            style={{
-              width: "100%",
-              maxWidth: "600px",
-              position: "absolute",
-              top: "-180px",
-              zIndex: "-1",
-            }}
-          ></img>
+        <Col
+          xs={{ span: 12, offset: 0 }}
+          sm={{ span: 12, offset: 0 }}
+          md={{ span: 5, offset: 6 }}
+          lg={{ span: 6, offset: 5 }}
+          xl={{ span: 6, offset: 4 }}
+          style={{ height: "75%" }}
+          className="text-light d-flex align-items-center justify-content-center"
+        >
+          <div className="text-center text-md-start ">
+            <h1 className="img-overlay">Wsparcie Finału</h1>
+            <p className="px-5 px-md-0 img-overlay">
+              Dowiedz się w jaki sposób możesz wspomóc osiągnąć cel 31. Finału
+              WOŚP.
+            </p>
+            <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
+            <Button onClick={() => router.push(supportNavigation.link)}>
+              {supportNavigation.name}
+            </Button>
+          </div>
         </Col>
       </Row>
-      <Row className="d-flex justify-content-center px-md-5">
-        {data
-          .filter((offer) => offer.display)
-          .map((offer) => (
-            <Col key={offer.title} xs={12} md={6} className="mb-4">
-              <SupportCard data={offer}></SupportCard>
-            </Col>
-          ))}
-      </Row>
     </Container>
-  ) : (
-    <></>
   );
 }
