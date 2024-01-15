@@ -7,5 +7,23 @@
                 "imagePath": "images/cards/dev_bg_light.jpg"
             }
         ]
+    },
+    {
+        "groupName": "partner_group_2",
+        "partners": [
+            {
+                "name": "partner_2",
+                "imagePath": "images/cards/events_bg_dark.jpg"
+            }
+        ]
+    },
+    {
+        "groupName": "partner_group_3",
+        "partners": [
+            {
+                "name": "partner_3",
+                "imagePath": "images/ConcertsPoster.jpg"
+            }
+        ]
     }
 ]

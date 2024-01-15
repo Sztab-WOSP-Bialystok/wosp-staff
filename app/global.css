@@ -195,3 +195,14 @@ footer {
     text-decoration: underline;
   }
 }
+
+/* Override carousel items to prevent fade transition bug: https://github.com/Sztab-WOSP-Bialystok/wosp-staff-issues/issues/26 */
+.carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out !important;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out !important;
+}
