@@ -25,9 +25,11 @@ export default function Page() {
         <Col xl={{ span: 8, offset: 2 }} className="my-2 img-overlay">
           <h1 className="text-center">Zapisy na bieg trwają!</h1>
           <h4 className="text-center px-5 px-md-0">
-            Biegnij dla zdrowia i&nbsp;zabawy! Dołącz do tysięcy biegaczy w
-            maratonie w Białymstoku -&nbsp;nie przegap tej okazji!
+            Wesprzyj akcję "Policz się z cukrzycą"!
           </h4>
+          <h5 className="text-center px-5 px-md-0">
+            Dołącz do setek uczestników biegu w Białymstoku!
+          </h5>
         </Col>
 
         <Col xl={{ span: 8, offset: 2 }} className="my-3 my-xl-5">
@@ -39,8 +41,7 @@ export default function Page() {
                   <li>
                     Należy otworzyć{" "}
                     <Card.Link href={formSource.url}>
-                      formularz zgłoszeniowy
-                      <i className="ms-2 bi bi-box-arrow-up-right"></i>
+                      formularz zgłoszeniowy&nbsp;<i className="ms-2 bi bi-box-arrow-up-right"></i>
                     </Card.Link>
                   </li>
                   <li>
