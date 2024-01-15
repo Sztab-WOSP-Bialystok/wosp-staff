@@ -7,12 +7,12 @@ import VolounteerTabHeader from "./volounteerTabHeader";
 import { FAQ_CATEGORY_KEYS } from "../../consts/faq-category-keys.const";
 
 export const faqTabs: TabElement[] = questions.map(
-  ({ name, questions }: QuestionGroup): TabElement => ({
+  ({ key, name, questions }: QuestionGroup): TabElement => ({
     name,
     id: name,
     content: (
       <>
-        {name === FAQ_CATEGORY_KEYS.VOLOUNTEER ? (
+        {key === FAQ_CATEGORY_KEYS.VOLOUNTEER ? (
           <VolounteerTabHeader></VolounteerTabHeader>
         ) : (
           <></>
