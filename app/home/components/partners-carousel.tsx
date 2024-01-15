@@ -13,7 +13,7 @@ function PartnersCarousel() {
   return (
     <Carousel fade interval={2000} indicators={false}>
       {partners.map((partner) => (
-        <Carousel.Item className="justify-content-center">
+        <Carousel.Item className="justify-content-center" key={partner.name}>
           <PartnerImg data={partner} />
         </Carousel.Item>
       ))}
