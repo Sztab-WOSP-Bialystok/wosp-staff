@@ -56,7 +56,7 @@ export const navigations: NavigationElement[] = [
     showInNavbar: false,
   },
   {
-    name: "Maratony",
+    name: "Biegi",
     link: Links.MARATHONS,
     showInNavbar: true,
   },
