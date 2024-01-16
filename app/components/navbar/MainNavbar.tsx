@@ -22,6 +22,7 @@ function MainNavbar() {
 								(navigation as NavigationElementGroup)
 									.elements ? (
 									<NavGroupElement
+										key={navigation.name}
 										data={
 											(navigation as NavigationElementGroup)
 										}
