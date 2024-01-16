@@ -4,6 +4,7 @@ export type Question = {
 }
 
 export type QuestionGroup = {
+    key: string,
     name: string
     questions: Question[]
 }

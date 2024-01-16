@@ -13,7 +13,6 @@ export interface NavigationElementGroup extends NavigationElement {
 export enum Links {
   HOME = "/",
   FAQ = "/faq",
-  ERROR = "/error",
   CONTACT = "/contact",
   COLLABORATION = "/collaboration",
   NEWS = "https://www.facebook.com/bialystokwosp",
@@ -22,6 +21,8 @@ export enum Links {
   GALLERY = "https://www.facebook.com/bialystokwosp/photos",
   MARATHONS = "/marathons",
   CONCERTS = "/concerts",
+  PARTNERS = "/partners",
+  SUPPORT = "/support",
 }
 
 export const navigations: NavigationElement[] = [
@@ -33,6 +34,11 @@ export const navigations: NavigationElement[] = [
   {
     name: "Kontakt",
     link: Links.CONTACT,
+    showInNavbar: true,
+  },
+  {
+    name: "Wsparcie Finału",
+    link: Links.SUPPORT,
     showInNavbar: true,
   },
   {
