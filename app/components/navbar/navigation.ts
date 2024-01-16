@@ -63,7 +63,7 @@ export const navigations: NavigationElement[] = [
   {
     name: "Koncerty",
     link: Links.CONCERTS,
-    showInNavbar: false,
+    showInNavbar: true,
   },
   {
     name: "Puszka stacjonarna",
@@ -74,10 +74,5 @@ export const navigations: NavigationElement[] = [
     name: "Galeria",
     link: Links.GALLERY,
     showInNavbar: true,
-  },
-  {
-    name: "Aktualności",
-    link: Links.NEWS,
-    showInNavbar: false,
-  },
+  }
 ];
