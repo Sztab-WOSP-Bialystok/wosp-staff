@@ -6,6 +6,7 @@ export interface NavigationElement {
 }
 
 export interface NavigationElementGroup extends NavigationElement {
+  showInNavbar: boolean;
   elements: NavigationElement[];
 }
 
@@ -40,6 +41,7 @@ export const navigations: NavigationElement[] = [
   },
   {
     name: "Bądź na bieżąco",
+    showInNavbar: true,
     elements: [
       {
         name: "Aktualności - Facebook",
@@ -50,6 +52,7 @@ export const navigations: NavigationElement[] = [
   } as NavigationElementGroup,
   {
     name: "Wsparcie Finału",
+    showInNavbar: true,
     elements: [
       {
         name: "Dołącz do nas",
@@ -65,6 +68,7 @@ export const navigations: NavigationElement[] = [
   } as NavigationElementGroup,
   {
     name: "Wydarzenia i imprezy",
+    showInNavbar: true,
     elements: [
       {
         name: "Maratony",

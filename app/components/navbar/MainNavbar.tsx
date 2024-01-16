@@ -1,4 +1,4 @@
-import { Container, Dropdown, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import BrandNavbar from "./BrandNavbar";
 import { navigations } from "./navigation";
 import NavElement from "./NavElement";
@@ -22,9 +22,9 @@ function MainNavbar() {
 							.map((navigation) =>
 								(navigation as NavigationElementGroup)
 									.elements ? (
-									<NavGroupElement //TODO: @Kompanel it is not displayed. WHY???
+									<NavGroupElement
 										data={
-											navigation as NavigationElementGroup
+											(navigation as NavigationElementGroup)
 										}
 									/>
 								) : (
