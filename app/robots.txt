@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /tag/
+Disallow: /category/
+
+Sitemap: http://wosp.bialystok.pl/sitemap.xml
