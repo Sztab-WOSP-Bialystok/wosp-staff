@@ -87,4 +87,9 @@ export const navigations: NavigationElement[] = [
     link: Links.GALLERY,
     showInNavbar: true,
   },
+  {
+    name: "Aktualności - Facebook", //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx
+    link: Links.NEWS,
+    showInNavbar: false,
+  },
 ];
