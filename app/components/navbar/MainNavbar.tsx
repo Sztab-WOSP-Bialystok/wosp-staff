@@ -6,7 +6,6 @@ import NavGroupElement from "./NavGroupElement";
 import { NavigationElementGroup } from "./navigation";
 
 function MainNavbar() {
-	console.log(navigations);
 	return (
 		<Navbar collapseOnSelect expand="xl" sticky="top" variant="dark">
 			<Container>
