@@ -1,6 +1,7 @@
 "use client";
 
 import holidaySectionBg from "public/images/cards/volounteers_bg_dark.jpg";
+import partnersSectionBg from "public/images/Sticker.webp";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -42,7 +43,12 @@ export default function Home() {
         style={{ backgroundColor: "white", minHeight: "10rem" }}
       >
         <Col xxl={{ span: 10, offset: 1 }} className="text-center">
-          <div className="text-dark mb-4">
+          <img
+            src={partnersSectionBg.src}
+            width={"90%"}
+            style={{ maxHeight: "25rem", objectFit: "contain" }}
+          ></img>
+          <div className="text-dark my-4">
             <h1 style={{ wordBreak: "normal" }}>Partnerzy 32. Finału!</h1>
             <h6>To dzięki nim Finał w Białymstoku jest możliwy!</h6>
           </div>
