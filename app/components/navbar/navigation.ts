@@ -89,6 +89,11 @@ export const navigations: NavigationElement[] = [
     ],
   } as NavigationElementGroup,
   {
+    name: "Patnerzy",
+    link: Links.PARTNERS,
+    showInNavbar: true,
+  },
+  {
     name: "Galeria - Facebook",
     link: Links.GALLERY,
     showInNavbar: true,
@@ -97,10 +102,5 @@ export const navigations: NavigationElement[] = [
     name: "Aktualności - Facebook", //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx s
     link: Links.NEWS,
     showInNavbar: false,
-  },
-    {
-    name: "Patnerzy",
-    link: Links.PARTNERS,
-    showInNavbar: true,
   },
 ];
