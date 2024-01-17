@@ -99,8 +99,8 @@ export const navigations: NavigationElement[] = [
     showInNavbar: false,
   },
     {
-    name: "Patnerzy", //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx s
+    name: "Patnerzy",
     link: Links.PARTNERS,
-    showInNavbar: false,
+    showInNavbar: true,
   },
 ];
