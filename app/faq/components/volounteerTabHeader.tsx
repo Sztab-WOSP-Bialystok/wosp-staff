@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { Card, Nav } from "react-bootstrap";
 import externalSources from "../../../public/info/external-sources.json";
-import { Nav } from "react-bootstrap";
+import { FAQ_CATEGORY_KEYS } from "../../consts/faq-category-keys.const";
 
 export type ExteralSource = {
   key: string;
@@ -12,22 +13,19 @@ export default function VolounteerTabHeader() {
   return (
     <div>
       {(externalSources as ExteralSource[])
-        .filter((source) => source.key === "for_volounteer")
+        .filter((source) => source.key === FAQ_CATEGORY_KEYS.VOLOUNTEER)
         .map((source) => (
-          <div className="my-3 mx-0 mx-sm-3">
+          <div className="my-3 mx-0 mx-sm-3" key={source.key}>
             <h6 className="theme-pink">
               Więcej szczegółów dotyczących rejestracji na stronie głównego
               Sztabu:
             </h6>
-            <Nav.Link
-              as={Link}
+            <Card.Link
               href={source.url}
-              data-bs-toggle="collapse"
-              className="d-flex align-items-center text-wrap link-primary text-decoration-underline"
             >
               <i className="me-2 bi bi-box-arrow-up-right"></i>
               {source.title}
-            </Nav.Link>
+            </Card.Link>
           </div>
         ))}
     </div>

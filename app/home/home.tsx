@@ -1,6 +1,7 @@
 "use client";
 
 import holidaySectionBg from "public/images/cards/volounteers_bg_dark.jpg";
+import partnersSectionBg from "public/images/Sticker.webp";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -15,7 +16,10 @@ import {
   navigations,
 } from "../components/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
-import HonoraryPatronageSection from "./sections/honorary-patriage/honorary-patronage-section";
+import HonoraryPatronageSection from "./sections/honorary-patronage/honorary-patronage-section";
+import FaqSection from "./sections/faq-section/faq-section";
+import PartnersCarousel from "./components/partners-carousel";
+import Link from "next/link";
 
 export default function Home() {
   const router = useRouter();
@@ -23,18 +27,44 @@ export default function Home() {
   const [iWolonatariuszSource] = useState<WospInternalLink>(
     wospInternalLinks.find((s) => s.key === "iwolontariusz")
   );
-  const [faqNavigation] = useState<NavigationElement>(
-    navigations.find((n) => n.link == Links.FAQ)
-  );
+
   const [newsNavigation] = useState<NavigationElement>(
     navigations.find((n) => n.link == Links.NEWS)
+  );
+
+  const [partnersNavigation] = useState<NavigationElement>(
+    navigations.find((n) => n.link == Links.PARTNERS)
   );
 
   return (
     <Container fluid>
       <Row
+        className="pb-4 pt-3"
+        style={{ backgroundColor: "white", minHeight: "10rem" }}
+      >
+        <Col xxl={{ span: 10, offset: 1 }} className="text-center">
+          <img
+            src={partnersSectionBg.src}
+            width={"90%"}
+            style={{ maxHeight: "25rem", objectFit: "contain" }}
+          ></img>
+          <div className="text-dark my-4">
+            <h1 style={{ wordBreak: "normal" }}>Partnerzy 32. Finału!</h1>
+            <h6>To dzięki nim Finał w Białymstoku jest możliwy!</h6>
+          </div>
+          <PartnersCarousel />
+          <div className="mt-4">
+            <Link href={partnersNavigation.link}>
+              Poznaj wszystkich Partnerów
+              <i className="ms-2 bi bi-box-arrow-up-right"></i>
+            </Link>
+          </div>
+        </Col>
+      </Row>
+
+      <Row
+        className="pb-5 pt-4"
         style={{
-          height: "95vh",
           backgroundImage: "url(" + holidaySectionBg.src + ")",
           backgroundColor: "black",
           backgroundAttachment: "fixed",
@@ -48,14 +78,13 @@ export default function Home() {
           md={{ span: 5, offset: 6 }}
           lg={{ span: 6, offset: 5 }}
           xl={{ span: 6, offset: 4 }}
-          style={{ height: "75%" }}
           className="text-light d-flex align-items-center justify-content-center"
         >
           <div className="text-center text-md-start ">
             <h1 className="img-overlay">Dołącz do grona wolontariuszy!</h1>
             <p className="px-5 px-md-0 img-overlay">
-              Wesprzyj realizację celu Finału dołączając do&nbsp;kwestujących
-              wolontariuszy. Każda&nbsp;para&nbsp;rąk&nbsp;się&nbsp;przyda!
+              Wesprzyj realizację celu Finału dołączając do kwestujących
+              wolontariuszy. Każda para rąk się przyda!
             </p>
             <h6 className="img-overlay">Kliknij po więcej informacji!</h6>
             <Button
@@ -67,67 +96,39 @@ export default function Home() {
             </Button>
           </div>
         </Col>
-        <Col
-          xs={12}
-          style={{ height: "25%" }}
-          className="text-light d-flex align-items-center justify-content-center"
-        >
-          <i
-            className={"animate-flicker" + " bi bi-arrow-down-short"}
-            style={{ fontSize: 60, alignSelf: "baseline" }}
-          ></i>
-        </Col>
       </Row>
 
       <Row
+        className="pb-5 pt-4"
         style={{
           backgroundColor: "white",
         }}
       >
-        <HonoraryPatronageSection />
+        <Col>
+          <HonoraryPatronageSection />
+        </Col>
       </Row>
 
-      <Row>
-        <SupportSection />
+      <Row className="pb-5 pt-4">
+        <Col>
+          <SupportSection />
+        </Col>
       </Row>
 
       <Row
-        className="py-4"
+        className="pb-5 pt-4"
         style={{
           backgroundColor: "var(--bs-body-bg)",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
         }}
       >
-        <Col
-          xs={{ span: 12, offset: 0 }}
-          sm={{ span: 12, offset: 0 }}
-          md={{ span: 10, offset: 2 }}
-          className="d-flex align-items-center justify-content-center justify-content-md-start"
-        >
-          <div className="text-center text-md-start">
-            <h1>Masz pytanie?</h1>
-            <Container fluid className="px-0">
-              <Row className="align-items-center">
-                <Col xs={12} sm={7} className="text-center">
-                  <h6 className="my-0">Przejdź do sekcji</h6>
-                </Col>
-                <Col xs={12} sm={5} className="mt-1 mt-sm-0">
-                  <Button onClick={() => router.push(faqNavigation.link)}>
-                    {faqNavigation.name}
-                  </Button>
-                </Col>
-              </Row>
-            </Container>
-            <p></p>
-          </div>
+        <Col>
+          <FaqSection />
         </Col>
       </Row>
-      <Row
-        style={{
-          height: "100vh",
-        }}
-      >
+
+      <Row className="pb-5 pt-4">
         <Col
           xs={{ span: 12, offset: 0 }}
           sm={{ span: 12, offset: 0 }}
