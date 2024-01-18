@@ -31,7 +31,7 @@ export default function Page() {
 					</Card>
 				</Col>
 				<Col xl={{ span: 8, offset: 2 }} className="my-2 img-overlay">
-					<h2 className="text-center">Wejście dla mediów</h2>
+					<h3 className="text-center">Wejście dla mediów</h3>
 					<div className="text-center px-5 px-md-0">
 						Lorem ipsum dolor sit amet consectetur, adipisicing
 						elit. Aliquid quas quod beatae aut est natus totam
@@ -42,7 +42,7 @@ export default function Page() {
                 <Col xl={{ span: 8, offset: 2 }} className="my-2 img-overlay">
 					<Card>
 						<Card.Body>
-							<h2>Prasa</h2>
+							<h4>Prasa</h4>
 							<p>
 								Lorem ipsum dolor sit amet consectetur,
 								adipisicing elit. Nemo fugiat quis magnam
@@ -51,7 +51,7 @@ export default function Page() {
 								placeat sit asperiores quidem, animi
 								dignissimos.
 							</p>
-							<h2>tresc1</h2>
+							<h4>tresc1</h4>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Error inventore minus, quidem
@@ -60,7 +60,7 @@ export default function Page() {
 								Necessitatibus adipisci ex vel ad consequatur!
 								Esse, laborum?
 							</p>
-							<h2>tresc2</h2>
+							<h4>tresc2</h4>
 							<p>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. In mollitia suscipit amet
@@ -72,7 +72,6 @@ export default function Page() {
 					</Card>
 				</Col>
 			</Row>
-			<Row></Row>
 		</Container>
 	);
 }
