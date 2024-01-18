@@ -131,7 +131,7 @@ export default function Page() {
 								style={{
 									position: "absolute",
 									top: "-30px",
-									left: "-350px",
+									left: "-350px", //troobleshooter img
 									zIndex: "-1",
 								}}
 							></img>
