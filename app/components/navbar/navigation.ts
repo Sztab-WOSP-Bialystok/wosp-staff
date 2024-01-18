@@ -18,6 +18,7 @@ export enum Links {
   CONCERTS = "/concerts",
   PARTNERS = "/partners",
   SUPPORT = "/support",
+  MEDIA = "/media",
 }
 
 export const navigations: NavigationElement[] = [
@@ -73,6 +74,11 @@ export const navigations: NavigationElement[] = [
   {
     name: "Galeria",
     link: Links.GALLERY,
+    showInNavbar: true,
+  },
+  {
+    name: "Dla mediów",
+    link: Links.MEDIA,
     showInNavbar: true,
   }
 ];
