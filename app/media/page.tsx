@@ -66,9 +66,9 @@ export default function Page() {
 								adipisicing elit. In mollitia suscipit amet
 								voluptatem fugiat. Molestiae eveniet, libero eos
 								qui ipsum in quibusdam incidunt nesciunt vero
-								enim accusantium maiores voluptatum aut!
+								enim accusantium maiores voluptatum aut
 							</p>
-						</Card.Body>
+						</Card.Body> 
 					</Card>
 				</Col>
 			</Row>
