@@ -1,9 +1,14 @@
-export type NavigationElement = {
-  link: string;
+export interface NavigationElement {
+  link?: string;
   name: string;
   disabled?: boolean;
   showInNavbar?: boolean;
-};
+}
+
+export interface NavigationElementGroup extends NavigationElement {
+  showInNavbar: boolean;
+  elements: NavigationElement[];
+}
 
 export enum Links {
   HOME = "/",
@@ -21,16 +26,6 @@ export enum Links {
 }
 
 export const navigations: NavigationElement[] = [
-{
-    name: "Aktualności",
-    link: Links.NEWS,
-    showInNavbar: false,
-  },
-  {
-    name: "Partnerzy",
-    link: Links.PARTNERS,
-    showInNavbar: true,
-  },
   {
     name: "Pytania",
     link: Links.FAQ,
@@ -51,28 +46,61 @@ export const navigations: NavigationElement[] = [
     link: Links.HOME,
   },
   {
-    name: "Dołącz do nas",
-    link: Links.COLLABORATION,
-    showInNavbar: false,
-  },
+    name: "Bądź na bieżąco",
+    showInNavbar: true,
+    elements: [
+      {
+        name: "Aktualności - Facebook",
+        link: Links.NEWS,
+        showInNavbar: true,
+      },
+    ],
+  } as NavigationElementGroup,
   {
-    name: "Biegi",
-    link: Links.MARATHONS,
+    name: "Wsparcie Finału",
+    showInNavbar: true,
+    elements: [
+      {
+        name: "Dołącz do nas",
+        link: Links.COLLABORATION,
+        showInNavbar: true,
+      },
+      {
+        name: "Puszka stacjonarna",
+        link: Links.MONEY_BOX,
+        showInNavbar: true,
+      },
+    ],
+  } as NavigationElementGroup,
+  {
+    name: "Wydarzenia i imprezy",
+    showInNavbar: true,
+    elements: [
+      {
+        name: "Maratony",
+        link: Links.MARATHONS,
+        showInNavbar: true,
+      },
+      {
+        name: "Koncerty",
+        link: Links.CONCERTS,
+        showInNavbar: true,
+      },
+    ],
+  } as NavigationElementGroup,
+  {
+    name: "Patnerzy",
+    link: Links.PARTNERS,
     showInNavbar: true,
   },
   {
-    name: "Koncerty",
-    link: Links.CONCERTS,
-    showInNavbar: true,
-  },
-  {
-    name: "Puszka stacjonarna",
-    link: Links.MONEY_BOX,
-    showInNavbar: true,
-  },
-  {
-    name: "Galeria",
+    name: "Galeria - Facebook",
     link: Links.GALLERY,
     showInNavbar: true,
-  }
+  },
+  {
+    name: "Aktualności - Facebook", //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx s
+    link: Links.NEWS,
+    showInNavbar: false,
+  },
 ];

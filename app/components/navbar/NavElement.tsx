@@ -2,13 +2,13 @@ import {Nav} from "react-bootstrap";
 import Link from "next/link";
 import {NavigationElement} from "./navigation";
 
-type NavElementProps = NavigationElement
+type NavElementProps = {data: NavigationElement}
 
-function NavElement({ link, name, disabled }: NavElementProps) {
+function NavElement({ data }: NavElementProps) {
 
     return (
-        <Nav.Link as={Link} href={link} disabled={disabled} data-bs-toggle="collapse">
-            {name}
+        <Nav.Link as={Link} href={data.link} disabled={data.disabled} data-bs-toggle="collapse">
+            {data.name}
         </Nav.Link>
     )
 }
