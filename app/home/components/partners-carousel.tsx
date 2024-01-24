@@ -6,6 +6,7 @@ import { PartnerGroupData } from "../../partners/page";
 function PartnersCarousel() {
   const partners = (partnerData as PartnerGroupData[])
     .map((x) => x.partners)
+    .reverse()
     .reduce((prev, curr) => {
       return curr.concat(prev);
     }, []);

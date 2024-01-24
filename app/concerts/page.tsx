@@ -1,6 +1,6 @@
 "use client";
 import { Container, Col } from "react-bootstrap";
-import concertsPoster from "../../public/images/Concerts.webp";
+import concertsPoster from "../../public/images/Concerts.jpg";
 
 export default function Page() {
 	return (

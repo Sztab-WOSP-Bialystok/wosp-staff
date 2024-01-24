@@ -45,8 +45,8 @@ export default function Home() {
         <Col xxl={{ span: 10, offset: 1 }} className="text-center">
           <img
             src={partnersSectionBg.src}
-            width={"90%"}
-            style={{ maxHeight: "25rem", objectFit: "contain" }}
+            width={"70%"}
+            style={{ maxHeight: "18rem", objectFit: "contain" }}
           ></img>
           <div className="text-dark my-4">
             <h1 style={{ wordBreak: "normal" }}>Partnerzy 32. Finału!</h1>

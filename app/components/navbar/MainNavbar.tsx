@@ -6,19 +6,24 @@ import NavGroupElement from "./NavGroupElement";
 import { NavigationElementGroup } from "./navigation";
 
 function MainNavbar() {
-	return (
-		<Navbar collapseOnSelect expand="xl" sticky="top" variant="dark">
-			<Container>
-				<BrandNavbar />
-				<Navbar.Toggle
+  return (
+    <Navbar
+      collapseOnSelect
+      expand="xl"
+      sticky="top"
+      variant="dark"
+    >
+      <Container>
+        <BrandNavbar />
+        <Navbar.Toggle
 					aria-controls="basic-navbar-nav"
 					className="p-0"
 				/>
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto">
-						{navigations
-							.filter((x) => x.showInNavbar)
-							.map((navigation) =>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            {navigations
+              .filter((x) => x.showInNavbar)
+              .map((navigation) =>
 								(navigation as NavigationElementGroup)
 									.elements ? (
 									<NavGroupElement
@@ -28,17 +33,17 @@ function MainNavbar() {
 										}
 									/>
 								) : (
-									<NavElement
-										key={navigation.name}
-										data={navigation}
-									/>
-								)
+                <NavElement
+                  key={navigation.name}
+                  data={navigation}
+                />
+              )
 							)}
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
-	);
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default MainNavbar;

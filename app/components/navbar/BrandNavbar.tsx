@@ -38,6 +38,11 @@ function BrandNavbar() {
           <i className="bi bi-instagram fs-3"></i>
         </Link>
       </div>
+      <div className="d-flex align-items-center me-2">
+        <Link href="https://www.tiktok.com/@wosp.bialystok">
+          <i className="bi bi-tiktok fs-3"></i>
+        </Link>
+      </div>
     </Navbar.Brand>
   );
 }

@@ -10,6 +10,11 @@
         "url": "https://www.bialystok.pl"
     },
     {
+        "key": "eskarbonka",
+        "title": "eSkarbonka",
+        "url": "https://eskarbonka.wosp.org.pl/finanekipi"
+    },
+    {
         "key": "marathon_form",
         "title": "Wypełnij formularz",
         "url": "https://forms.gle/3VxvwMn8uRJmebDV8"

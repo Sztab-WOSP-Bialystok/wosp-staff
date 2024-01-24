@@ -39,18 +39,18 @@ export const navigations: NavigationElement[] = [
   {
     name: "Wsparcie Finału",
     link: Links.SUPPORT,
-    showInNavbar: true,
+    showInNavbar: false,  //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx s
   },
   {
     name: "Strona główna",
     link: Links.HOME,
   },
   {
-    name: "Bądź na bieżąco",
+    name: "Aktualności",
     showInNavbar: true,
     elements: [
       {
-        name: "Aktualności - Facebook",
+        name: "Strona Facebook",
         link: Links.NEWS,
         showInNavbar: true,
       },
@@ -61,7 +61,12 @@ export const navigations: NavigationElement[] = [
     showInNavbar: true,
     elements: [
       {
-        name: "Dołącz do nas",
+        name: "Formy wsparcia",
+        link: Links.SUPPORT,
+        showInNavbar: true,
+      },
+      {
+        name: "Dołącz do Sztabu",
         link: Links.COLLABORATION,
         showInNavbar: true,
       },
@@ -73,7 +78,7 @@ export const navigations: NavigationElement[] = [
     ],
   } as NavigationElementGroup,
   {
-    name: "Wydarzenia i imprezy",
+    name: "Wydarzenia",
     showInNavbar: true,
     elements: [
       {
@@ -94,13 +99,13 @@ export const navigations: NavigationElement[] = [
     showInNavbar: true,
   },
   {
-    name: "Galeria - Facebook",
+    name: "Galeria",
     link: Links.GALLERY,
     showInNavbar: true,
   },
   {
-    name: "Aktualności - Facebook", //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx s
+    name: "Aktualności - Facebook",
     link: Links.NEWS,
-    showInNavbar: false,
+    showInNavbar: false,  //repeairs temporary bug (router.push(newsNavigation.link)) in home.tsx s
   },
 ];

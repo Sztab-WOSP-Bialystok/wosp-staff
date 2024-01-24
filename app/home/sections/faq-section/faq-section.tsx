@@ -1,4 +1,3 @@
-import router from "next/router";
 import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import {
@@ -6,8 +5,11 @@ import {
   navigations,
   Links,
 } from "../../../components/navbar/navigation";
+import { useRouter } from "next/navigation";
 
 export default function FaqSection() {
+  const router = useRouter();
+
   const [faqNavigation] = useState<NavigationElement>(
     navigations.find((n) => n.link == Links.FAQ)
   );

@@ -12,4 +12,8 @@ export const socialMediaLinks: SocialMediaLink[] = [
     icon: <i className="bi bi-instagram"></i>,
     link: "https://www.instagram.com/wosp.bialystok",
   },
+  {
+    icon: <i className="bi bi-tiktok"></i>,
+    link: "https://www.tiktok.com/@wosp.bialystok",
+  },
 ];

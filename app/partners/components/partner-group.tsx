@@ -34,7 +34,7 @@ export function PartnerImg({ data: partner }: PartnerProps) {
       style={{
         height: "8rem",
         width: "100%",
-        maxWidth: "12rem",
+        maxWidth: "16rem",
         objectFit: "contain",
       }}
     />

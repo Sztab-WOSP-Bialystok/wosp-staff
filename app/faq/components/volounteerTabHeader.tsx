@@ -15,7 +15,7 @@ export default function VolounteerTabHeader() {
       {(externalSources as ExteralSource[])
         .filter((source) => source.key === FAQ_CATEGORY_KEYS.VOLOUNTEER)
         .map((source) => (
-          <div className="my-3 mx-0 mx-sm-3" key={source.key}>
+          <div className="my-2 mx-0 mx-sm-3" key={source.key}>
             <h6 className="theme-pink">
               Więcej szczegółów dotyczących rejestracji na stronie głównego
               Sztabu:
