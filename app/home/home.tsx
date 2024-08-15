@@ -9,12 +9,12 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import {
   WospInternalLink,
   wospInternalLinks,
-} from "../components/footer/models/wospInternalLink";
+} from "../../components/ui/footer/models/wospInternalLink";
 import {
   Links,
   NavigationElement,
   navigations,
-} from "../components/navbar/navigation";
+} from "../../components/ui/navbar/navigation";
 import SupportSection from "./sections/support-section/support-section";
 import HonoraryPatronageSection from "./sections/honorary-patronage/honorary-patronage-section";
 import FaqSection from "./sections/faq-section/faq-section";

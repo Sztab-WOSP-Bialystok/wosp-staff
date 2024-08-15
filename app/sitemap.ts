@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { Links } from "./components/navbar/navigation";
+import { Links } from "../components/ui/navbar/navigation";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://wosp.bialystok.pl";

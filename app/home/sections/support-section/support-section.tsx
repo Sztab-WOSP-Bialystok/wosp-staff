@@ -4,7 +4,7 @@ import {
   Links,
   NavigationElement,
   navigations,
-} from "../../../components/navbar/navigation";
+} from "../../../../components/ui/navbar/navigation";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
 import supportSectionBg from "public/images/section-bg/support.jpg";

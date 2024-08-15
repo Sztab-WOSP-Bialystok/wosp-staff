@@ -3,9 +3,9 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./global.css";
 
-import { Navbar } from "./components/navbar";
+import { Navbar } from "../components/ui/navbar";
 import { ReactNode } from "react";
-import AppFooter from "./components/footer/appFooter";
+import AppFooter from "../components/ui/footer/appFooter";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

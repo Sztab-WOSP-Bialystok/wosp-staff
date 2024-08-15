@@ -1,4 +1,4 @@
-import { TabElement } from "../../components/Tabs/types";
+import { TabElement } from "../../../components/ui/Tabs/types";
 import questions from "../../../public/info/faq-data.json";
 
 import Questions from "./Questions";

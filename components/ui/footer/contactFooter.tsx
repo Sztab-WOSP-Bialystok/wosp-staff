@@ -3,8 +3,8 @@ import { socialMediaLinks } from "./models/socialMediaLink";
 import { wospInternalLinks } from "./models/wospInternalLink";
 import { useState } from "react";
 import { NavigationElement, navigations, Links } from "../navbar/navigation";
-import { EXTERNAL_SOURCE_KEYS } from "../../consts/external-source-keys.const";
-import { ExteralSource } from "../../faq/components/volounteerTabHeader";
+import { EXTERNAL_SOURCE_KEYS } from "../../../app/consts/external-source-keys.const";
+import { ExteralSource } from "../../../app/faq/components/volounteerTabHeader";
 import externalSources from "../../../public/info/external-sources.json";
 
 const ContactFooter = () => {

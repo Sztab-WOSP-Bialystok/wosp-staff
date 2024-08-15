@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {DisneyFont} from "../../styledComponents/DisnayFont";
 import {Col, Stack} from "react-bootstrap";
-import {parseToDoubleDigits} from "../../../utils/DisplayUtils";
+import {parseToDoubleDigits} from "../../../../app/utils/DisplayUtils";
 
 type CounterGridProps = {
     days: number

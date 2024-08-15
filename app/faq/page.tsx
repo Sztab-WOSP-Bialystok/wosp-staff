@@ -1,6 +1,6 @@
 "use client"; //TODO: Configure SSR
 import { Card, Col, Container, Row } from "react-bootstrap";
-import { Tabs } from "../components/Tabs";
+import { Tabs } from "../../components/ui/Tabs";
 import { faqTabs } from "./components/faqTabs";
 
 export default function Page() {
